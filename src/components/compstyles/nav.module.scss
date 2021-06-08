@@ -1,0 +1,19 @@
+.rocket {
+	font-size: 100px;
+}
+
+.link {
+	margin-right: 2rem;
+	font-size: 32px;
+	color: dodgerblue;
+	text-decoration: none;
+	font-weight: 600;
+
+	&:hover {
+		border-bottom: 2px solid rgb(250, 43, 43);
+	}
+
+	&:focus {
+		border-bottom: 2px solid rgb(250, 43, 43);
+	}
+}
