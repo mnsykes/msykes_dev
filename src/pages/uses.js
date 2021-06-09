@@ -1,14 +1,12 @@
 import React from "react";
-import ContactForm from "../components/ContactForm";
 import Layout from "../components/Layout";
 
-export default function contact() {
+export default function uses() {
 	return (
 		<Layout>
 			<main>
 				<div>
-					<h1>Hire Me!!!</h1>
-					<ContactForm />
+					<h1>Uses Page</h1>
 				</div>
 			</main>
 		</Layout>

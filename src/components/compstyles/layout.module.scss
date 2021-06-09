@@ -1,0 +1,19 @@
+.container {
+	height: 100vh;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 15% 70% 15%;
+}
+
+.headArea {
+	background: paleturquoise;
+}
+
+.mainArea {
+	background: lightpink;
+}
+
+.footArea {
+	background: palegreen;
+	text-align: center;
+}

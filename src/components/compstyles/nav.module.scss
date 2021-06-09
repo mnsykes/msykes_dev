@@ -1,9 +1,21 @@
+.navContainer {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.logo {
+	text-align: center;
+}
+
 .rocket {
 	font-size: 100px;
 }
 
+.navLinks {
+	border: 5px dashed darkblue;
+}
+
 .link {
-	margin-right: 2rem;
 	font-size: 32px;
 	color: dodgerblue;
 	text-decoration: none;

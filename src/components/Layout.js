@@ -1,11 +1,18 @@
 import React from "react";
+import { container, headArea, mainArea, footArea } from "./compstyles/layout.module.scss";
 import Navbar from "./Navbar";
+import Footer from "./Footer";
 
 export default function Layout({ children }) {
 	return (
-		<div>
-			<Navbar />
-			{children}
+		<div className={container}>
+			<header className={headArea}>
+				<Navbar />
+			</header>
+			<main className={mainArea}>{children}</main>
+			<footer className={footArea}>
+				<Footer />
+			</footer>
 		</div>
 	);
 }
