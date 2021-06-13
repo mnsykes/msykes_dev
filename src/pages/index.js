@@ -1,11 +1,15 @@
 import * as React from "react";
+import { Helmet } from "react-helmet";
 import Layout from "../components/Layout";
 import "../styles/main.scss";
+
 // markup
 const IndexPage = () => {
 	return (
 		<Layout>
-			<h1>Hi, I'm Matthew Sykes</h1>
+			<Helmet htmlAttributes={{ lang: "en" }} title="Matthew Sykes - Front End Developer" />
+			<h1 className="gradient">Hey, thanks for stopping by!</h1>
+			<h2>I'm Matt and I'm looking for my first job as a developer</h2>
 			<h3>
 				Probably the coolest developer in the world
 				<span role="img" aria-label="img"></span>😎

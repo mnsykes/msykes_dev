@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
-import { navContainer, logo, rocket, navLinks, link } from "./compstyles/nav.module.scss";
+import { navContainer, logo, rocket, navLinks } from "./compstyles/nav.module.scss";
 
 export default function Navbar() {
 	return (
@@ -11,18 +11,10 @@ export default function Navbar() {
 				</span>
 			</div>
 			<div className={navLinks}>
-				<Link to="/" className={link}>
-					Home
-				</Link>
-				<Link to="/contact" className={link}>
-					Contact
-				</Link>
-				<Link to="/projects" className={link}>
-					Projects
-				</Link>
-				<Link to="/uses" className={link}>
-					Uses
-				</Link>
+				<Link to="/">Home</Link>
+				<Link to="/contact">Contact</Link>
+				<Link to="/projects">Projects</Link>
+				<Link to="/uses">Uses</Link>
 			</div>
 		</nav>
 	);

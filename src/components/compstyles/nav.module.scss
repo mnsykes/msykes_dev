@@ -1,31 +1,31 @@
 .navContainer {
 	display: grid;
-	grid-template-columns: 1fr 1fr;
-}
+	grid-template-columns: 1fr;
 
-.logo {
-	text-align: center;
-}
+	.logo {
+		.rocket {
+			font-size: 75px;
+		}
+	} // end logo
 
-.rocket {
-	font-size: 100px;
-}
+	.navLinks {
+		display: flex;
+		justify-content: space-around;
 
-.navLinks {
-	border: 5px dashed darkblue;
-}
+		Link {
+			border: 1px solid blue;
+			font-size: 2rem;
+			color: dodgerblue;
+			text-decoration: none;
+			font-weight: 600;
 
-.link {
-	font-size: 32px;
-	color: dodgerblue;
-	text-decoration: none;
-	font-weight: 600;
+			&:hover {
+				transform: scale(1.1);
+			}
 
-	&:hover {
-		border-bottom: 2px solid rgb(250, 43, 43);
-	}
-
-	&:focus {
-		border-bottom: 2px solid rgb(250, 43, 43);
-	}
-}
+			&:focus {
+				border-bottom: 2px solid rgb(250, 43, 43);
+			}
+		} // end link
+	} // end navLinks
+} // end navContainer

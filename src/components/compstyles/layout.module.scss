@@ -2,18 +2,17 @@
 	height: 100vh;
 	display: grid;
 	grid-template-columns: 1fr;
-	grid-template-rows: 15% 70% 15%;
 }
 
 .headArea {
-	background: paleturquoise;
+	border-bottom: 1px lightgray solid;
 }
 
 .mainArea {
-	background: lightpink;
+	text-align: center;
 }
 
 .footArea {
-	background: palegreen;
+	border-top: 1px lightgray solid;
 	text-align: center;
 }
