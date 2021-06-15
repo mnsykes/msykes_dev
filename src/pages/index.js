@@ -17,7 +17,7 @@ const IndexPage = () => {
 				</h1>
 				<br />
 				<br />
-				<h2>I've studied HTML, CSS, JavaScript, ,jQuery, Python, XML, and ColdFusion at school</h2>
+				<h2>I've studied HTML, CSS, JavaScript, ,jQuery, Python, XML, and ColdFusion at UMass</h2>
 				<h2>And I've taught myself some Sass, Django, Gatsby, and React during my free time</h2>
 
 				<br />
