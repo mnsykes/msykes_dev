@@ -1,5 +1,6 @@
 .container {
-	height: 100vh;
+	max-width: 70%;
+	margin: 0 auto;
 	display: grid;
 	grid-template-columns: 1fr;
 }
@@ -9,10 +10,15 @@
 }
 
 .mainArea {
-	text-align: center;
+	margin: 0 auto;
+	padding: 2rem;
+	overflow-y: visible;
+	overflow-x: hidden;
 }
 
 .footArea {
+	height: auto;
+	padding: 2rem 0;
 	border-top: 1px lightgray solid;
 	text-align: center;
 }

@@ -1,16 +1,16 @@
 .container {
-	border-bottom: rgba(57, 255, 255, 0.986);
+	margin: 0 auto;
 }
 
 .contact {
-	border: 1px red solid;
+	max-width: 100%;
 	margin: 0 auto;
-	max-width: 50%;
-	padding: 2rem 2rem;
+	font-size: 1.25rem;
 }
 
 .inputWrapper {
 	display: flex;
+	flex-direction: column;
 }
 
 .inputGroup {
@@ -19,24 +19,27 @@
 	justify-content: space-between;
 	text-align: left;
 	margin-bottom: 0.5rem;
+
+	label {
+		font-weight: bold;
+	}
 }
 
 .input {
 	padding: 5px 10px;
-}
-
-.textWrapper {
-	border-bottom: 2px solid rgb(248, 64, 64);
+	font-size: 1rem;
 }
 
 .message {
 	max-width: 100%;
 	min-width: 100%;
 	margin-bottom: 0.5rem;
+	font-size: 1rem;
 }
 
 .submitBtn {
 	padding: 10px 5px;
+	font-size: 1.25rem;
 	width: 100%;
 	background: rgb(24, 151, 255);
 	outline: none;

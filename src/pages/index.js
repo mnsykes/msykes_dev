@@ -7,17 +7,22 @@ import "../styles/main.scss";
 const IndexPage = () => {
 	return (
 		<Layout>
-			<Helmet htmlAttributes={{ lang: "en" }} title="Matthew Sykes - Front End Developer" />
-			<h1 className="gradient">Hey, thanks for stopping by!</h1>
-			<h2>I'm Matt and I'm looking for my first job as a developer</h2>
-			<h3>
-				Probably the coolest developer in the world
-				<span role="img" aria-label="img"></span>😎
-			</h3>
-			<span role="img" aria-label="img">
-				🌻🥑🦋✨🌙
-			</span>
-			<button id="testBtn">I'm so cool</button>
+			<div className="content">
+				<Helmet htmlAttributes={{ lang: "en" }} title="Matthew Sykes - Front End Developer" />
+				<h1>
+					I'm Matt, and I'm looking for my first job as a developer
+					<span role="img" aria-label="img">
+						😎
+					</span>
+				</h1>
+				<br />
+				<br />
+				<h2>I've studied HTML, CSS, JavaScript, ,jQuery, Python, XML, and ColdFusion at school</h2>
+				<h2>And I've taught myself some Sass, Django, Gatsby, and React during my free time</h2>
+
+				<br />
+				<br />
+			</div>
 		</Layout>
 	);
 };

@@ -1,0 +1,24 @@
+.aboutTitle {
+	text-align: center;
+	font-weight: bold;
+}
+
+.aboutGrid {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 3rem;
+}
+
+.aboutText {
+	max-width: 60ch;
+	font-size: 1.5rem;
+}
+
+.emojiList {
+	margin: 0 auto;
+	line-height: 4rem;
+	p,
+	span {
+		font-size: 1.5rem;
+	}
+}

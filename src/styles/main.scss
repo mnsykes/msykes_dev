@@ -18,25 +18,48 @@ ul {
 }
 
 h1 {
-	font-size: 75px;
+	font-weight: 100;
 }
 
 span {
-	font-size: 48px;
+	font-size: 1.5rem;
 }
 
-.projectList {
-	list-style: none;
+.content {
+	margin: 0 auto;
 }
 
-#testBtn {
-	display: block;
+.btnGroup {
+	padding: 2rem 4rem;
+	display: flex;
+	justify-content: center;
+}
+
+.hireBtn {
+	border: none;
+	outline: none;
 	cursor: pointer;
+	background: rgb(255, 0, 13);
 	color: white;
-	font-size: 24px;
-	padding: 15px;
+	font-size: 1.5rem;
+	margin-right: 0.5rem;
+	padding: 1rem 1.5rem;
+}
 
+#yesBtn {
 	&:hover {
-		background: blue;
+		background: green;
+	}
+}
+
+#noBtn {
+	&:hover {
+		background: red;
+	}
+}
+
+#maybeBtn {
+	&:hover {
+		background: yellow;
 	}
 }

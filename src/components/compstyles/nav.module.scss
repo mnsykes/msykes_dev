@@ -3,6 +3,7 @@
 	grid-template-columns: 1fr;
 
 	.logo {
+		margin: 0 auto;
 		.rocket {
 			font-size: 75px;
 		}
@@ -10,11 +11,11 @@
 
 	.navLinks {
 		display: flex;
-		justify-content: space-around;
+		justify-content: center;
 
-		Link {
-			border: 1px solid blue;
-			font-size: 2rem;
+		.navLink {
+			padding: 1rem 1rem;
+			font-size: 1.5rem;
 			color: dodgerblue;
 			text-decoration: none;
 			font-weight: 600;
@@ -24,6 +25,7 @@
 			}
 
 			&:focus {
+				outline: none;
 				border-bottom: 2px solid rgb(250, 43, 43);
 			}
 		} // end link
