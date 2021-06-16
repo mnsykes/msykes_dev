@@ -1,7 +1,8 @@
 import * as React from "react";
 import { Helmet } from "react-helmet";
+import { Link } from "gatsby";
 import Layout from "../components/Layout";
-import "../styles/main.scss";
+import { btnGroup, button, yes, no, maybe } from "../styles/home.module.scss";
 
 // markup
 const IndexPage = () => {
@@ -17,8 +18,33 @@ const IndexPage = () => {
 				</h1>
 				<br />
 				<br />
-				<h2>I've studied HTML, CSS, JavaScript, ,jQuery, Python, XML, and ColdFusion at UMass</h2>
-				<h2>And I've taught myself some Sass, Django, Gatsby, and React during my free time</h2>
+				<h2>Want to learn more about me?</h2>
+				<section className={btnGroup}>
+					<div className={button}>
+						<Link to="/about" className={yes}>
+							Heck Yeah!{" "}
+							<span role="img" aria-label="img">
+								💥
+							</span>
+						</Link>
+					</div>
+					<div className={button}>
+						<Link to="/about" className={no}>
+							No Way!{" "}
+							<span role="img" aria-label="img">
+								🙅‍♂️
+							</span>
+						</Link>
+					</div>
+					<div className={button}>
+						<Link to="/about" className={maybe}>
+							Maybe...{" "}
+							<span role="img" aria-label="img">
+								🤞
+							</span>
+						</Link>
+					</div>
+				</section>
 
 				<br />
 				<br />

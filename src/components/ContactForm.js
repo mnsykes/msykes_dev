@@ -13,7 +13,13 @@ import {
 export default function ContactForm() {
 	return (
 		<div className={container}>
-			<form className={contact}>
+			<form
+				className={contact}
+				name="contact"
+				method="post"
+				data-netlify="true"
+				data-netlify-honeypot="bot-field"
+			>
 				<div className={inputWrapper}>
 					<div className={inputGroup}>
 						<label htmlFor="name">Name</label>

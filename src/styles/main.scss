@@ -28,38 +28,3 @@ span {
 .content {
 	margin: 0 auto;
 }
-
-.btnGroup {
-	padding: 2rem 4rem;
-	display: flex;
-	justify-content: center;
-}
-
-.hireBtn {
-	border: none;
-	outline: none;
-	cursor: pointer;
-	background: rgb(255, 0, 13);
-	color: white;
-	font-size: 1.5rem;
-	margin-right: 0.5rem;
-	padding: 1rem 1.5rem;
-}
-
-#yesBtn {
-	&:hover {
-		background: green;
-	}
-}
-
-#noBtn {
-	&:hover {
-		background: red;
-	}
-}
-
-#maybeBtn {
-	&:hover {
-		background: yellow;
-	}
-}
