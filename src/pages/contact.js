@@ -16,7 +16,7 @@ export default function contact() {
 			<form
 				className={contactForm}
 				name="getintouch"
-				method="post"
+				method="POST"
 				data-netlify="true"
 				data-netlify-honeypot="bot-field"
 			>
@@ -41,7 +41,9 @@ export default function contact() {
 					/>
 				</div>
 				<div>
-					<button className={submitBtn}>Submit</button>
+					<button type="submit" className={submitBtn}>
+						Submit
+					</button>
 				</div>
 			</form>
 		</Layout>
