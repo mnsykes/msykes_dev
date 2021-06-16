@@ -22,6 +22,36 @@ const IndexPage = () => {
 
 				<br />
 				<br />
+				<div>
+					<h2>Some stuff I've made</h2>
+					<div>
+						<a
+							href="https://friendly-borg-85bda9.netlify.app/"
+							target="_blank"
+							rel="noreferrer nopener"
+						>
+							Simple Diary App
+						</a>
+					</div>
+					<div>
+						<a
+							href="https://admiring-johnson-83ee21.netlify.app/"
+							target="_blank"
+							rel="noreferrer noopener"
+						>
+							ECBL: The fake basketball league
+						</a>
+					</div>
+					<div>
+						<a
+							href="https://upbeat-perlman-79a42e.netlify.app/"
+							target="_blank"
+							rel="noreferrer noopener"
+						>
+							Seeds of Solidary: Redesign
+						</a>
+					</div>
+				</div>
 			</div>
 		</Layout>
 	);
