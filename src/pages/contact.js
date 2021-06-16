@@ -15,7 +15,7 @@ export default function contact() {
 		<Layout>
 			<form
 				className={contactForm}
-				name="contact"
+				name="getintouch"
 				method="post"
 				data-netlify="true"
 				data-netlify-honeypot="bot-field"
