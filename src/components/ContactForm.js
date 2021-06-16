@@ -16,7 +16,7 @@ export default function ContactForm() {
 			<form
 				className={contact}
 				name="contact"
-				method="post"
+				action="POST"
 				data-netlify="true"
 				data-netlify-honeypot="bot-field"
 			>
@@ -40,6 +40,7 @@ export default function ContactForm() {
 						placeholder="Message"
 					/>
 				</div>
+				<div data-netlify-recaptcha="true"></div>
 				<div>
 					<button className={submitBtn}>Submit</button>
 				</div>
