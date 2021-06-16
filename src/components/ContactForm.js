@@ -23,11 +23,11 @@ export default function ContactForm() {
 				<div className={inputWrapper}>
 					<div className={inputGroup}>
 						<label htmlFor="name">Name</label>
-						<input type="text" className={input} id="name" placeholder="Name" />
+						<input type="text" className={input} id="name" name="name" placeholder="Name" />
 					</div>
 					<div className={inputGroup}>
 						<label htmlFor="email">Email</label>
-						<input type="email" className={input} id="email" placeholder="Email" />
+						<input type="email" className={input} id="email" name="email" placeholder="Email" />
 					</div>
 				</div>
 				<div className={textWrapper}>
