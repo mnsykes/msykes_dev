@@ -2,10 +2,13 @@ import * as React from "react";
 import { Helmet } from "react-helmet";
 import { Link } from "gatsby";
 import Layout from "../components/Layout";
-import { btnGroup, button, yes, no, maybe } from "../styles/home.module.scss";
+import Memoji from "../components/Memoji";
+import Maybe from "../components/Maybe";
+import { yesFace, maybeFace, btnGroup, button, yes, no, maybe } from "../styles/home.module.scss";
+import "../styles/main.scss";
 
 // markup
-const IndexPage = () => {
+export default function IndexPage() {
 	return (
 		<Layout>
 			<div className="content">
@@ -16,15 +19,21 @@ const IndexPage = () => {
 						😎
 					</span>
 				</h1>
-				<br />
-				<br />
-				<h2>Want to learn more about me?</h2>
+				<div className={yesFace}>
+					<Memoji />
+				</div>
+				<div className={maybeFace}>
+					<Maybe />
+				</div>
 				<section className={btnGroup}>
+					<div>
+						<h2>Want to learn more about me?</h2>
+					</div>
 					<div className={button}>
 						<Link to="/about" className={yes}>
 							Heck Yeah!{" "}
 							<span role="img" aria-label="img">
-								💥
+								🚀
 							</span>
 						</Link>
 					</div>
@@ -45,42 +54,7 @@ const IndexPage = () => {
 						</Link>
 					</div>
 				</section>
-
-				<br />
-				<br />
-				<div>
-					<h2>Some stuff I've made</h2>
-					<div>
-						<a
-							href="https://friendly-borg-85bda9.netlify.app/"
-							target="_blank"
-							rel="noreferrer nopener"
-						>
-							Simple Diary App
-						</a>
-					</div>
-					<div>
-						<a
-							href="https://admiring-johnson-83ee21.netlify.app/"
-							target="_blank"
-							rel="noreferrer noopener"
-						>
-							ECBL: The fake basketball league
-						</a>
-					</div>
-					<div>
-						<a
-							href="https://upbeat-perlman-79a42e.netlify.app/"
-							target="_blank"
-							rel="noreferrer noopener"
-						>
-							Seeds of Solidary: Redesign
-						</a>
-					</div>
-				</div>
 			</div>
 		</Layout>
 	);
-};
-
-export default IndexPage;
+}

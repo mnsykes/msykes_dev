@@ -5,7 +5,6 @@ import {
 	inputWrapper,
 	inputGroup,
 	input,
-	textWrapper,
 	message,
 	submitBtn
 } from "../components/compstyles/form.module.scss";
@@ -15,7 +14,7 @@ export default function contact() {
 		<Layout>
 			<form
 				className={contactForm}
-				name="getintouch"
+				name="contact-form"
 				method="POST"
 				data-netlify="true"
 				data-netlify-honeypot="bot-field"
@@ -30,7 +29,7 @@ export default function contact() {
 						<input type="email" className={input} id="email" name="email" placeholder="Email" />
 					</div>
 				</div>
-				<div className={textWrapper}>
+				<div>
 					<textarea
 						name="message"
 						className={message}
