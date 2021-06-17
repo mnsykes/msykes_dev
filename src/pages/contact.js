@@ -40,6 +40,7 @@ export default function contact() {
 					/>
 				</div>
 				<div>
+					<input type="hidden" name="form-name" value="contact-form" />
 					<button type="submit" className={submitBtn}>
 						Submit
 					</button>
