@@ -1,3 +1,5 @@
+@import "../../styles/colors";
+
 .container {
 	max-width: 70%;
 	margin: 0 auto;
@@ -6,7 +8,7 @@
 }
 
 .headArea {
-	border-bottom: 1px lightgray solid;
+	border-bottom: 2px solid $purple;
 }
 
 .mainArea {
@@ -19,6 +21,6 @@
 .footArea {
 	height: auto;
 	padding: 2rem 0;
-	border-top: 1px lightgray solid;
+	border-top: 2px solid $pink;
 	text-align: center;
 }

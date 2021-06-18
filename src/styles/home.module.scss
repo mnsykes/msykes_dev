@@ -1,52 +1,71 @@
 @import "mixins";
+@import "colors";
 
-.yesFace {
-	height: 200px;
-	width: 200px;
+.content {
+	margin: 0 auto;
+
+	h1 {
+		text-align: center;
+	}
 }
 
-.maybeFace {
-	height: 200px;
-	width: 200px;
-	display: none;
+.face {
+	margin: 0 auto;
+	height: auto;
+	max-width: 200px;
 }
 
 .btnGroup {
 	display: flex;
 	flex-direction: column;
-	margin-top: 2rem;
-	border-top: 1px solid aqua;
 	padding: 2rem;
 
-	.button {
-		color: white;
+	h2 {
+		display: block;
+		margin-bottom: 1rem;
+	}
+
+	// 	.button {
+	// 		background: $aqua;
+	// 		border-bottom: 4px solid $pink;
+	// 		color: white;
+	// 		padding: 1rem 2rem;
+	// 		margin-bottom: 1rem;
+	// 		font-weight: bold;
+	// 		text-transform: uppercase;
+	// 		cursor: pointer;
+
+	// 		&:hover {
+	// 			background: $purple;
+	// 			border-bottom: 4px solid $yellow;
+	// 		}
+
+	// 		@include xs {
+	// 			font-size: 1.25rem;
+	// 		}
+
+	// 		@include md {
+	// 			margin-right: 3rem;
+	// 		}
+	// 	}
+
+	// 	@include md {
+	// 		display: flex;
+	// 		flex-direction: row;
+	// 	}
+	// }
+
+	.btn {
+		color: $pink;
+		font-weight: bold;
+		text-transform: uppercase;
+	}
+
+	.drawBorder {
+		@include btn-border-drawing($pink, $yellow, 4px, bottom, right);
+		margin-bottom: 1rem;
 		padding: 1rem 2rem;
-
-		@include xs {
-			font-size: 1.25rem;
-		}
-	}
-
-	.yes {
-		&:hover {
-			border-bottom: 1px solid green;
-		}
-	}
-
-	.no {
-		&:hover {
-			border-bottom: 1px solid red;
-		}
-	}
-
-	.maybe {
-		&:hover {
-			border-bottom: 1px solid purple;
-		}
-	}
-
-	@include md {
-		display: flex;
-		flex-direction: row;
+		text-align: center;
+		cursor: pointer;
 	}
 }

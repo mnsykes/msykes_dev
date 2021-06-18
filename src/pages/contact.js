@@ -7,7 +7,7 @@ import {
 	input,
 	message,
 	submitBtn
-} from "../components/compstyles/form.module.scss";
+} from "../styles/form.module.scss";
 
 export default function contact() {
 	return (

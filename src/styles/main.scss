@@ -1,4 +1,5 @@
 @import "mixins";
+@import "colors";
 
 * {
 	margin: 0;
@@ -10,10 +11,13 @@ body {
 	height: 100vh;
 	width: 100vw;
 	font-weight: 400;
+	background: #223344;
+	color: white;
 }
 
 a {
 	text-decoration: none;
+	color: $yellow;
 }
 
 ul {
@@ -31,8 +35,4 @@ h6 {
 
 span {
 	font-size: 1.5rem;
-}
-
-.content {
-	margin: 0 auto;
 }

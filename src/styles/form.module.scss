@@ -1,3 +1,5 @@
+@import "colors";
+
 .container {
 	margin: 0 auto;
 }
@@ -38,8 +40,10 @@
 .submitBtn {
 	padding: 10px 5px;
 	width: 100%;
-	background: rgb(24, 151, 255);
+	background: $aqua;
+	color: $yellow;
 	outline: none;
 	border: none;
 	cursor: pointer;
+	font-weight: bold;
 }
