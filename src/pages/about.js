@@ -1,10 +1,5 @@
 import React from "react";
 import Layout from "../components/Layout";
-import Seeds from "../components/Seeds";
-import Ecbl from "../components/Ecbl";
-import Diary from "../components/Diary";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { aboutTitle, aboutGrid, aboutText, emojiList } from "../styles/about.module.scss";
 
 export default function about() {
@@ -64,54 +59,6 @@ export default function about() {
 							</p>
 						</li>
 					</ul>
-				</div>
-
-				<h2>Some stuff I've made</h2>
-				<div>
-					<a
-						href="https://friendly-borg-85bda9.netlify.app/"
-						target="_blank"
-						rel="noreferrer nopener"
-					>
-						<Diary />
-						<h3>
-							<span>
-								<FontAwesomeIcon icon={faGithub} />
-							</span>
-							Simple Diary App
-						</h3>
-					</a>
-				</div>
-				<div>
-					<a
-						href="https://admiring-johnson-83ee21.netlify.app/"
-						target="_blank"
-						rel="noreferrer noopener"
-					>
-						<Ecbl />
-						<h3>
-							<span>
-								<FontAwesomeIcon icon={faGithub} />
-							</span>
-							ECBL: The fake basketball league
-						</h3>
-					</a>
-				</div>
-				<div>
-					<a
-						href="https://upbeat-perlman-79a42e.netlify.app/"
-						target="_blank"
-						rel="noreferrer noopener"
-					>
-						<Seeds />
-					</a>
-					<h3>
-						<span>
-							<FontAwesomeIcon icon={faGithub} />
-						</span>{" "}
-						Seeds of Solidarity Redesign
-					</h3>
-					<p>School project to redesign a site for a non-profit</p>
 				</div>
 			</div>
 		</Layout>

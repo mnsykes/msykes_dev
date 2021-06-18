@@ -1,16 +1,26 @@
 @import "../../styles/colors";
+@import "../../styles/mixins";
 
 .navContainer {
 	display: grid;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: 1fr;
 	padding-top: 4rem;
 	padding-bottom: 2rem;
 
 	.logo {
+		display: flex;
+		justify-content: center;
+		margin-bottom: 1.5rem;
+
 		.bar {
 			height: 2px;
 			width: 35px;
 			background: $yellow;
+		}
+
+		@include md {
+			display: block;
+			margin-bottom: 0;
 		}
 	}
 
@@ -34,4 +44,9 @@
 			}
 		} // end link
 	} // end navLinks
+
+	@include md {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
 } // end navContainer

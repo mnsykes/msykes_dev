@@ -4,7 +4,7 @@ import { StaticImage } from "gatsby-plugin-image";
 export default function Memoji() {
 	return (
 		<div>
-			<StaticImage src="../images/diary.jpg" alt="me" placeholder="blurred" />
+			<StaticImage src="../images/diary.jpg" alt="Image of Diary App" placeholder="blurred" />
 		</div>
 	);
 }

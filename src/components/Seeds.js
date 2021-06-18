@@ -4,7 +4,11 @@ import { StaticImage } from "gatsby-plugin-image";
 export default function Memoji() {
 	return (
 		<div>
-			<StaticImage src="../images/seeds.jpg" alt="me" placeholder="blurred" />
+			<StaticImage
+				src="../images/seeds.jpg"
+				alt="Image of Seeds of Solidarity homepage"
+				placeholder="blurred"
+			/>
 		</div>
 	);
 }

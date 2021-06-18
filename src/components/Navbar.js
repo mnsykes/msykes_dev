@@ -18,6 +18,9 @@ export default function Navbar() {
 				<Link to="/about" className={navLink}>
 					About
 				</Link>
+				<Link to="/projects" className={navLink}>
+					Projects
+				</Link>
 				<Link to="/contact" className={navLink}>
 					Contact
 				</Link>
