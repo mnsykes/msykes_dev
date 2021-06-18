@@ -33,12 +33,13 @@
 	.navLinks {
 		display: flex;
 		align-items: flex-end;
-		justify-content: flex-end;
+		justify-content: space-between;
 
 		.navLink {
 			padding: 0 1rem;
 			text-decoration: none;
 			font-weight: bold;
+			text-transform: uppercase;
 
 			&:hover {
 				transform: scale(1.1);
@@ -51,6 +52,11 @@
 				text-decoration: underline $yellow;
 			}
 		} // end link
+
+		@include md {
+			display: flex;
+			justify-content: flex-end;
+		}
 	} // end navLinks
 
 	@include md {

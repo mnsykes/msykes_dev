@@ -130,7 +130,7 @@ export default function projects() {
 						<p>
 							I spent a lot of time looking at their site during my redesign and they seem like a
 							really great organization. If you ever find yourself in the North Quabbin area of
-							Massachusetts you should definitely stop by their and show your support.
+							Massachusetts you should definitely stop by there and show your support.
 						</p>
 					</div>
 				</div>

@@ -2,26 +2,26 @@
 @import "colors";
 
 .container {
-	height: auto;
-	padding: 8rem 0 8rem 0;
 	margin: 0 auto;
-	max-width: 70%;
-
-	.aboutTitle {
-		text-align: left;
-		text-transform: uppercase;
-		color: $aqua;
-		font-weight: bold;
-	}
+	height: auto;
+	padding: 1rem 0;
+	max-width: 100%;
 
 	.aboutGrid {
+		margin: 0 auto;
 		display: grid;
 		grid-template-columns: 1fr;
-		gap: 3rem;
+		gap: 1.5rem;
 
-		.aboutText {
-			max-width: 60ch;
+		.aboutTitle {
+			text-align: left;
+			text-transform: uppercase;
+			color: $aqua;
+			font-weight: bold;
 		}
+		// .aboutText {
+		// 	max-width: 60ch;
+		// }
 
 		.emojiList {
 			margin: 0 auto;
@@ -33,6 +33,10 @@
 			}
 		}
 
+		@include md {
+			padding: 2rem 0;
+			max-width: 70%;
+		}
 		@include lg {
 			display: grid;
 			grid-template-columns: 1fr 1fr;

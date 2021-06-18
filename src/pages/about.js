@@ -12,10 +12,10 @@ export default function about() {
 	return (
 		<Layout>
 			<div className={container}>
-				<h1 className={aboutTitle}>About Me</h1>
-				<br />
 				<div className={aboutGrid}>
 					<div className={aboutText}>
+						<h1 className={aboutTitle}>About Me</h1>
+						<br />
 						<p>
 							I'm a new developer looking for my first job. After spending the last 20 years or so
 							working unfulfilling jobs I decided it was time that I finally find a career that
