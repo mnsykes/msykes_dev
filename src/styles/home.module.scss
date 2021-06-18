@@ -2,70 +2,39 @@
 @import "colors";
 
 .content {
+	height: auto;
+	padding: 10rem 0;
 	margin: 0 auto;
+	max-width: 100%;
 
 	h1 {
 		text-align: center;
-	}
-}
-
-.face {
-	margin: 0 auto;
-	height: auto;
-	max-width: 200px;
-}
-
-.btnGroup {
-	display: flex;
-	flex-direction: column;
-	padding: 2rem;
-
-	h2 {
-		display: block;
-		margin-bottom: 1rem;
-	}
-
-	// 	.button {
-	// 		background: $aqua;
-	// 		border-bottom: 4px solid $pink;
-	// 		color: white;
-	// 		padding: 1rem 2rem;
-	// 		margin-bottom: 1rem;
-	// 		font-weight: bold;
-	// 		text-transform: uppercase;
-	// 		cursor: pointer;
-
-	// 		&:hover {
-	// 			background: $purple;
-	// 			border-bottom: 4px solid $yellow;
-	// 		}
-
-	// 		@include xs {
-	// 			font-size: 1.25rem;
-	// 		}
-
-	// 		@include md {
-	// 			margin-right: 3rem;
-	// 		}
-	// 	}
-
-	// 	@include md {
-	// 		display: flex;
-	// 		flex-direction: row;
-	// 	}
-	// }
-
-	.btn {
-		color: $pink;
 		font-weight: bold;
 		text-transform: uppercase;
+		color: $aqua;
 	}
 
-	.drawBorder {
-		@include btn-border-drawing($pink, $yellow, 4px, bottom, right);
-		margin-bottom: 1rem;
-		padding: 1rem 2rem;
-		text-align: center;
-		cursor: pointer;
+	.face {
+		margin: 0 auto;
+		height: auto;
+		max-width: 200px;
+	}
+
+	.cta {
+		max-width: 80%;
+		margin: 0 auto;
+
+		.ctaLink {
+			font-weight: bold;
+
+			&:hover {
+				color: $aqua;
+				text-decoration: underline $yellow;
+			}
+		}
+
+		@include md {
+			max-width: 70%;
+		}
 	}
 }

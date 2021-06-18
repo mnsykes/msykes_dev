@@ -1,11 +1,32 @@
 @import "colors";
+@import "mixins";
 
 .container {
+	height: auto;
+	padding: 8rem 0 15rem 0;
 	margin: 0 auto;
-}
-
-.contactForm {
 	max-width: 100%;
+
+	h1 {
+		text-align: center;
+		text-transform: uppercase;
+		color: $purple;
+		font-weight: bold;
+	}
+
+	h2 {
+		font-weight: bold;
+		text-transform: uppercase;
+		text-align: center;
+		margin-bottom: 2rem;
+		color: $aqua;
+	}
+
+	@include md {
+		max-width: 70%;
+	}
+}
+.contactForm {
 	margin: 0 auto;
 }
 
@@ -23,6 +44,9 @@
 
 	label {
 		font-weight: bold;
+		text-transform: uppercase;
+		color: $aqua;
+		font-size: 1.25rem;
 	}
 }
 
@@ -40,10 +64,17 @@
 .submitBtn {
 	padding: 10px 5px;
 	width: 100%;
-	background: $aqua;
-	color: $yellow;
+	background: $purple;
+	color: $white;
 	outline: none;
 	border: none;
 	cursor: pointer;
 	font-weight: bold;
+	font-size: 1.5rem;
+	text-transform: uppercase;
+
+	&:hover {
+		background: $aqua;
+		border-bottom: 3px solid $yellow;
+	}
 }

@@ -1,3 +1,15 @@
-.myEmojis {
-	font-size: 24px;
+@import "../../styles/colors";
+
+.footerArea {
+	height: 3rem;
+
+	a {
+		font-size: 2rem;
+		padding: 0 1rem;
+		color: $aqua;
+
+		&:hover {
+			color: $purple;
+		}
+	}
 }

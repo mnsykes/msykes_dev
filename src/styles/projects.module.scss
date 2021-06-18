@@ -1,10 +1,25 @@
 @import "mixins";
 @import "colors";
+
+.container {
+	height: auto;
+
+	h1 {
+		text-transform: uppercase;
+		font-weight: bold;
+		color: $pink;
+	}
+
+	h3 {
+		color: $yellow;
+		font-weight: bold;
+	}
+}
 .projectCard {
 	display: grid;
 	grid-template-columns: 1fr;
 	gap: 2rem;
-	margin-bottom: 2rem;
+	margin: 0 auto 4rem auto;
 
 	.imgArea {
 		.cardImage {
@@ -15,7 +30,12 @@
 
 	.descArea {
 		.gitLink {
-			background: $aqua;
+			color: $aqua;
+			margin-left: 1rem;
+
+			&:hover {
+				color: $purple;
+			}
 		}
 	}
 

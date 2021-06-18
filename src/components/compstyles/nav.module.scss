@@ -12,10 +12,16 @@
 		justify-content: center;
 		margin-bottom: 1.5rem;
 
-		.bar {
-			height: 2px;
-			width: 35px;
-			background: $yellow;
+		.logoLink {
+			color: $aqua;
+			font-weight: bold;
+			text-decoration: 5px underline $yellow;
+
+			&:hover {
+				color: $yellow;
+				font-weight: bold;
+				text-decoration: 5px underline $aqua;
+			}
 		}
 
 		@include md {
@@ -32,15 +38,17 @@
 		.navLink {
 			padding: 0 1rem;
 			text-decoration: none;
-			font-weight: 600;
+			font-weight: bold;
 
 			&:hover {
 				transform: scale(1.1);
+				color: $aqua;
+				text-decoration: underline $yellow;
 			}
 
 			&:focus {
 				outline: none;
-				border-bottom: 2px solid rgb(250, 43, 43);
+				text-decoration: underline $yellow;
 			}
 		} // end link
 	} // end navLinks

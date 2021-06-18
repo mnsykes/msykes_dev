@@ -1,20 +1,41 @@
 @import "mixins";
+@import "colors";
 
-.aboutTitle {
-	text-align: center;
-}
-
-.aboutGrid {
-	display: grid;
-	grid-template-columns: 1fr;
-	gap: 3rem;
-}
-
-.aboutText {
-	max-width: 60ch;
-}
-
-.emojiList {
+.container {
+	height: auto;
+	padding: 8rem 0 8rem 0;
 	margin: 0 auto;
-	line-height: 4rem;
+	max-width: 70%;
+
+	.aboutTitle {
+		text-align: left;
+		text-transform: uppercase;
+		color: $aqua;
+		font-weight: bold;
+	}
+
+	.aboutGrid {
+		display: grid;
+		grid-template-columns: 1fr;
+		gap: 3rem;
+
+		.aboutText {
+			max-width: 60ch;
+		}
+
+		.emojiList {
+			margin: 0 auto;
+			line-height: 2rem;
+
+			li {
+				font-weight: bold;
+				color: $yellow;
+			}
+		}
+
+		@include lg {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+		}
+	}
 }

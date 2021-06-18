@@ -1,10 +1,10 @@
 @import "../../styles/colors";
+@import "../../styles/mixins";
 
 .container {
+	height: 100vh;
 	max-width: 70%;
 	margin: 0 auto;
-	display: grid;
-	grid-template-columns: 1fr;
 }
 
 .headArea {
@@ -14,12 +14,11 @@
 .mainArea {
 	margin: 0 auto;
 	padding: 2rem;
-	overflow-y: visible;
-	overflow-x: hidden;
 }
 
 .footArea {
-	height: auto;
+	position: relative;
+	bottom: 0;
 	padding: 2rem 0;
 	border-top: 2px solid $pink;
 	text-align: center;

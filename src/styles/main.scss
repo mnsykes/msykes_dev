@@ -7,17 +7,23 @@
 	box-sizing: border-box;
 }
 
-body {
-	height: 100vh;
-	width: 100vw;
+body,
+html {
+	height: 100%;
+	width: 100%;
 	font-weight: 400;
-	background: #223344;
-	color: white;
+	background: $background;
+	color: $white;
 }
 
 a {
 	text-decoration: none;
-	color: $yellow;
+	color: $purple;
+
+	&:hover {
+		color: $aqua;
+		text-decoration: $yellow underline;
+	}
 }
 
 ul {
