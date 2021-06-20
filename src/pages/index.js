@@ -3,7 +3,7 @@ import { Helmet } from "react-helmet";
 import { Link } from "gatsby";
 import Layout from "../components/Layout";
 import Memoji from "../components/Memoji";
-import { content, face, cta, ctaLink } from "../styles/home.module.scss";
+import { content, face, myFace, cta, ctaLink } from "../styles/home.module.scss";
 import "../styles/main.scss";
 
 // markup
@@ -13,15 +13,23 @@ export default function IndexPage() {
 			<div className={content}>
 				<Helmet htmlAttributes={{ lang: "en" }} title="Matthew Sykes - Front End Developer" />
 				<div className={face}>
-					<Memoji />
+					<div className={myFace}>
+						<Memoji />
+					</div>
+					<div>
+						<h1>Hey, I'm Matt</h1>
+					</div>
 				</div>
-				<h1>I'm Matt, and I'm an Aspiring Front End Developer</h1>
-				<br />
 				<div className={cta}>
 					<h2>
 						I just graduated from UMass Lowell with a Bachelor's Degree in Information Technology
-						and I'm looking for my first job as a developer. Please check out the rest of my site
-						and if you like what you see, drop a line using my{" "}
+						and I'm looking for my first job as a developer. Whatever I lack in experience, I more
+						than make up for it with my drive to succeed and my passion for learning. I know I will
+						be succesful in this field when given the opportunity.
+					</h2>
+					<br />
+					<h2>
+						Please check out the rest of my site and if you like what you see, drop a line using my{" "}
 						<Link to="/contact" className={ctaLink}>
 							contact form
 						</Link>

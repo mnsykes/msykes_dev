@@ -10,7 +10,6 @@
 	h1 {
 		text-align: center;
 		text-transform: uppercase;
-		color: $purple;
 		font-weight: bold;
 	}
 
@@ -19,19 +18,19 @@
 		text-transform: uppercase;
 		text-align: center;
 		margin-bottom: 2rem;
-		color: $aqua;
 	}
 
 	@include md {
 		padding: 2rem 0;
-		max-width: 70%;
+		max-width: 80%;
 	}
 }
 .contactForm {
 	margin: 0 auto;
+	padding: 1.5rem;
 
 	@include md {
-		max-width: 70%;
+		padding: 3.5rem 3rem;
 	}
 }
 
@@ -45,41 +44,42 @@
 	flex-direction: column;
 	justify-content: space-between;
 	text-align: left;
-	margin-bottom: 0.5rem;
+	margin-bottom: 1.5rem;
 
 	label {
 		font-weight: bold;
 		text-transform: uppercase;
-		color: $aqua;
 		font-size: 1.25rem;
+		padding-bottom: 0.5rem;
 	}
 }
 
 .input {
-	padding: 5px 10px;
+	font-size: 1rem;
+	padding: 0.5rem;
 }
 
 .message {
-	padding: 5px 10px;
+	padding: 0.5rem;
+	font-size: 1rem;
 	max-width: 100%;
 	min-width: 100%;
-	margin-bottom: 0.5rem;
+	margin-bottom: 1.5rem;
 }
 
 .submitBtn {
 	padding: 10px 5px;
 	width: 100%;
-	background: $purple;
-	color: $white;
+	background: $background;
+	color: white;
+	font-weight: bold;
 	outline: none;
 	border: none;
 	cursor: pointer;
-	font-weight: bold;
 	font-size: 1.5rem;
 	text-transform: uppercase;
 
 	&:hover {
-		background: $aqua;
-		border-bottom: 3px solid $yellow;
+		background: $blue;
 	}
 }

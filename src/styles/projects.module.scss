@@ -10,11 +10,10 @@
 	h1 {
 		text-transform: uppercase;
 		font-weight: bold;
-		color: $pink;
 	}
 
 	h3 {
-		color: $yellow;
+		color: $background;
 		font-weight: bold;
 	}
 
@@ -42,11 +41,11 @@
 
 	.descArea {
 		.gitLink {
-			color: $aqua;
+			color: $blue;
 			margin-left: 1rem;
 
 			&:hover {
-				color: $purple;
+				color: $yellow;
 			}
 		}
 	}

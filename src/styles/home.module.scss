@@ -3,39 +3,53 @@
 
 .content {
 	height: auto;
-	padding: 1rem 0;
+	padding: 1rem 0 5rem 0;
 	margin: 0 auto;
 	max-width: 100%;
 
-	h1 {
-		text-align: center;
-		font-weight: bold;
-		text-transform: uppercase;
-		color: $aqua;
-	}
-
 	.face {
-		margin: 0 auto;
-		height: auto;
-		max-width: 200px;
-	}
+		// margin: 0 auto;
+		display: flex;
 
-	.cta {
-		max-width: 100%;
-		margin: 0 auto;
+		.myFace {
+			max-width: 200px;
+			height: auto;
+		}
 
-		.ctaLink {
+		h1 {
+			padding-top: 7rem;
 			font-weight: bold;
+			text-transform: uppercase;
+			color: $blue;
+		}
 
-			&:hover {
-				color: $aqua;
-				text-decoration: underline $yellow;
+		.cta {
+			max-width: 100%;
+			margin: 0 auto;
+
+			h2 {
+				font-weight: 300;
+				line-height: 1.5em;
+			}
+
+			.ctaLink {
+				font-weight: bold;
+
+				&:hover {
+					color: $aqua;
+					text-decoration: underline $yellow;
+				}
+			}
+
+			@include md {
+				padding: 2rem 0;
+				max-width: 55%;
 			}
 		}
+	}
 
-		@include md {
-			padding: 2rem 0;
-			max-width: 50%;
-		}
+	@include md {
+		padding: 2rem 0;
+		max-width: 60%;
 	}
 }

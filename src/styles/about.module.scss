@@ -13,33 +13,39 @@
 		grid-template-columns: 1fr;
 		gap: 1.5rem;
 
-		.aboutTitle {
-			text-align: left;
+		h1 {
+			text-align: center;
 			text-transform: uppercase;
-			color: $aqua;
 			font-weight: bold;
 		}
-		// .aboutText {
-		// 	max-width: 60ch;
-		// }
 
 		.emojiList {
 			margin: 0 auto;
 			line-height: 2rem;
+			display: flex;
 
-			li {
-				font-weight: bold;
-				color: $yellow;
+			div {
+				padding: 0 1rem;
 			}
+
+			// ul {
+			// 	display: flex;
+			// 	flex-direction: column;
+
+			// 	li {
+			// 		font-weight: bold;
+			// 	}
+
+			// 	@include xl {
+			// 		display: flex;
+			// 		flex-direction: row;
+			// 	}
+			// }
 		}
 
 		@include md {
 			padding: 2rem 0;
 			max-width: 70%;
-		}
-		@include lg {
-			display: grid;
-			grid-template-columns: 1fr 1fr;
 		}
 	}
 }

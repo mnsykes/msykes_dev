@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
-import { navContainer, logo, logoLink, navLinks, navLink, bar } from "./compstyles/nav.module.scss";
+import { navContainer, logo, logoLink, navLinks, navLink } from "./compstyles/nav.module.scss";
 
 export default function Navbar() {
 	return (

@@ -15,6 +15,14 @@ module.exports = {
 				name: "images",
 				path: "./src/images/"
 			}
-		}
+		},
+		{
+			resolve: `gatsby-source-filesystem`,
+			options: {
+				name: `projects`,
+				path: `./src/projects/`
+			}
+		},
+		`gatsby-transformer-remark`
 	]
 };

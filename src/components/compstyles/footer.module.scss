@@ -1,15 +1,17 @@
 @import "../../styles/colors";
 
 .footerArea {
-	height: 3rem;
-
+	padding-bottom: 3rem;
+	text-align: center;
+	position: relative;
+	bottom: 0;
 	a {
 		font-size: 2rem;
 		padding: 0 1rem;
-		color: $aqua;
+		color: $background;
 
 		&:hover {
-			color: $purple;
+			color: $border;
 		}
 	}
 }
