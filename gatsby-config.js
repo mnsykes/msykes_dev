@@ -10,17 +10,24 @@ module.exports = {
 		"gatsby-transformer-sharp",
 		"gatsby-plugin-fontawesome-css",
 		{
-			resolve: "gatsby-source-filesystem",
+			resolve: `gatsby-source-filesystem`,
 			options: {
-				name: "images",
-				path: "./src/images/"
+				name: `images`,
+				path: `${__dirname}/src/images/`
 			}
 		},
 		{
 			resolve: `gatsby-source-filesystem`,
 			options: {
 				name: `projects`,
-				path: `./src/projects/`
+				path: `${__dirname}/src/projects/`
+			}
+		},
+		{
+			resolve: `gatsby-source-filesystem`,
+			options: {
+				name: `thumbs`,
+				path: `${__dirname}/src/projects/thumbs`
 			}
 		},
 		`gatsby-transformer-remark`

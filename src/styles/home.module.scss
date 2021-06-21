@@ -1,55 +1,38 @@
 @import "mixins";
 @import "colors";
 
-.content {
-	height: auto;
-	padding: 1rem 0 5rem 0;
-	margin: 0 auto;
-	max-width: 100%;
+.face {
+	// margin: 0 auto;
+	display: flex;
 
-	.face {
-		// margin: 0 auto;
-		display: flex;
-
-		.myFace {
-			max-width: 200px;
-			height: auto;
-		}
-
-		h1 {
-			padding-top: 7rem;
-			font-weight: bold;
-			text-transform: uppercase;
-			color: $blue;
-		}
-
-		.cta {
-			max-width: 100%;
-			margin: 0 auto;
-
-			h2 {
-				font-weight: 300;
-				line-height: 1.5em;
-			}
-
-			.ctaLink {
-				font-weight: bold;
-
-				&:hover {
-					color: $aqua;
-					text-decoration: underline $yellow;
-				}
-			}
-
-			@include md {
-				padding: 2rem 0;
-				max-width: 55%;
-			}
-		}
+	.myFace {
+		max-width: 200px;
+		height: auto;
 	}
 
-	@include md {
-		padding: 2rem 0;
-		max-width: 60%;
+	h1 {
+		padding-top: 7rem;
+		font-weight: bold;
+		text-transform: uppercase;
+		color: $blue;
+	}
+
+	.cta {
+		max-width: 100%;
+		margin: 0 auto;
+
+		h2 {
+			font-weight: 300;
+			line-height: 1.5em;
+		}
+
+		.ctaLink {
+			font-weight: bold;
+
+			&:hover {
+				color: $aqua;
+				text-decoration: underline $yellow;
+			}
+		}
 	}
 }

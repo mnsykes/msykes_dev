@@ -3,14 +3,14 @@ import { Helmet } from "react-helmet";
 import { Link } from "gatsby";
 import Layout from "../components/Layout";
 import Memoji from "../components/Memoji";
-import { content, face, myFace, cta, ctaLink } from "../styles/home.module.scss";
+import { face, myFace, cta, ctaLink } from "../styles/home.module.scss";
 import "../styles/main.scss";
 
 // markup
 export default function IndexPage() {
 	return (
 		<Layout>
-			<div className={content}>
+			<div>
 				<Helmet htmlAttributes={{ lang: "en" }} title="Matthew Sykes - Front End Developer" />
 				<div className={face}>
 					<div className={myFace}>
@@ -24,8 +24,8 @@ export default function IndexPage() {
 					<h2>
 						I just graduated from UMass Lowell with a Bachelor's Degree in Information Technology
 						and I'm looking for my first job as a developer. Whatever I lack in experience, I more
-						than make up for it with my drive to succeed and my passion for learning. I know I will
-						be succesful in this field when given the opportunity.
+						than make up for with my drive to succeed and my passion for learning. I know I will be
+						succesful in this field given the opportunity.
 					</h2>
 					<br />
 					<h2>

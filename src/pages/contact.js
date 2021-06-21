@@ -1,7 +1,6 @@
 import React from "react";
 import Layout from "../components/Layout";
 import {
-	container,
 	contactForm,
 	inputWrapper,
 	inputGroup,
@@ -13,7 +12,7 @@ import {
 export default function contact() {
 	return (
 		<Layout>
-			<div className={container}>
+			<div>
 				<h1>Get In Touch</h1>
 				<br />
 				<h2>Especially if you want to hire me!</h2>

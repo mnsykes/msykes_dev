@@ -1,5 +1,5 @@
 import React from "react";
-import { container } from "./compstyles/layout.module.scss";
+import { container, content } from "./compstyles/layout.module.scss";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 
@@ -7,7 +7,7 @@ export default function Layout({ children }) {
 	return (
 		<div className={container}>
 			<Navbar />
-			<main>{children}</main>
+			<main className={content}>{children}</main>
 
 			<Footer />
 		</div>

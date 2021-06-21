@@ -1,11 +1,11 @@
 import React from "react";
 import Layout from "../components/Layout";
-import { container, aboutGrid, aboutText, emojiList } from "../styles/about.module.scss";
+import { aboutGrid, aboutText, emojiList } from "../styles/about.module.scss";
 
 export default function about() {
 	return (
 		<Layout>
-			<div className={container}>
+			<div>
 				<div className={aboutGrid}>
 					<h1>About</h1>
 					<div className={aboutText}>
