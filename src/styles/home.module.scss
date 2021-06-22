@@ -2,12 +2,10 @@
 @import "colors";
 
 .face {
-	// margin: 0 auto;
 	border-bottom: 4px solid $yellow;
 	background: $blue;
 	display: flex;
 	margin: 0 auto;
-
 
 	.myFace {
 		max-width: 150px;

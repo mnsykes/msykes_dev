@@ -6,7 +6,6 @@
 	max-width: 95%;
 	margin: 0 auto;
 	padding: 4rem 0;
-	
 
 	.topBar {
 		background: lightgray;
@@ -53,13 +52,12 @@
 	@include md {
 		max-width: 60%;
 	}
-}
+} // end container
 
 .content {
-	// box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
 	background: white;
 	height: auto;
-	padding: 2.5rem .5rem;
+	padding: 2.5rem 0.5rem;
 	margin: 0 auto;
 
 	@include md {

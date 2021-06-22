@@ -17,7 +17,7 @@ export default function about() {
 							career that would bring me fulfillment and happiness. I took an HTML course in my
 							twenties and I remembered how much I enjoyed it. Almost 20 years after taking that
 							class I made the decision to dive in head first for a mid-life career change to become
-							a developer, so I enrolled in the Information Technology at UMass Lowell for the
+							a developer, and I enrolled in the Information Technology at UMass Lowell for the
 							Spring 2020 semester. I earned my degree this spring and it wouldn't have been
 							possible without the support from my family; especially my wife, who has been there
 							through thick and thin and has encouraged me to succeed every step of the way.
@@ -29,9 +29,11 @@ export default function about() {
 						</p>
 						<br />
 						<p>
-							Beyond school, I have spent time learning Gatsby, React, and Django to name a few things. Any free moment I have is spent trying to learn more about development: whether it's watching a Udemy course while washing dishes, listening to a podcast in
+							Beyond school, I have spent time learning Gatsby, React, and Django to name a few
+							things. Any free moment I have is spent trying to learn more about development:
+							whether it's watching a Udemy course while washing dishes, listening to a podcast in
 							the car, or reading a book waiting to see the doctor, I'm constantly trying to do
-							whatever I can to reach my goal of becoming a developer. 
+							whatever I can to reach my goal of becoming a developer.
 						</p>
 						<br />
 						<p>
