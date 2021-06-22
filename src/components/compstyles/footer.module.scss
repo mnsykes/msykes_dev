@@ -5,13 +5,15 @@
 	text-align: center;
 	position: relative;
 	bottom: 0;
+	background: rgb(241, 241, 241);
+
 	a {
 		font-size: 2rem;
 		padding: 0 1rem;
-		color: $background;
+		color: $blue;
 
 		&:hover {
-			color: $border;
+			color: white;
 		}
 	}
 }

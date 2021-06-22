@@ -4,29 +4,26 @@
 .navContainer {
 	display: grid;
 	grid-template-columns: 1fr;
-	padding-top: 1.5rem;
+	padding-top: 0.5rem;
+	background: $blue;
 
 	.logo {
-		display: flex;
-		justify-content: center;
-		margin-bottom: 1rem;
-
 		.logoLink {
-			color: $blue;
+			color: white;
 			text-decoration: 5px underline $yellow;
 			font-weight: bold;
+			text-align: center;
 
 			&:hover {
 				color: $yellow;
 				font-weight: bold;
-				text-decoration: 5px underline $blue;
+				text-decoration: 5px underline white;
 			}
-		}
 
-		@include md {
-			display: flex;
-			justify-content: flex-start;
-			margin-bottom: 0;
+			@include md {
+				text-align: left;
+				padding-left: 1.5rem;
+			}
 		}
 	} // end logo
 
@@ -34,8 +31,10 @@
 		display: flex;
 		align-items: flex-end;
 		justify-content: center;
+		padding-bottom: 0.5rem;
 
 		.navLink {
+			color: white;
 			padding: 0 1rem;
 			text-decoration: none;
 			font-weight: bold;
@@ -43,7 +42,7 @@
 
 			&:hover {
 				transform: scale(1.1);
-				color: $aqua;
+				color: $yellow;
 				text-decoration: underline $yellow;
 			}
 

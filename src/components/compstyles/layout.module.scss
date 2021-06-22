@@ -5,6 +5,49 @@
 	height: 100vh;
 	max-width: 90%;
 	margin: 0 auto;
+	padding: 4rem 0;
+
+	.topBar {
+		background: lightgray;
+		height: 2rem;
+
+		.circles {
+			display: flex;
+			align-items: center;
+			padding: 0.5rem 0.5rem;
+
+			.one {
+				margin-right: 0.5rem;
+				border-radius: 50%;
+				height: 0.75rem;
+				width: 0.75rem;
+				background-color: green;
+			}
+
+			.two {
+				margin-right: 0.5rem;
+				border-radius: 50%;
+				height: 0.75rem;
+				width: 0.75rem;
+				background: yellow;
+			}
+
+			.three {
+				border-radius: 50%;
+				height: 0.75rem;
+				width: 0.75rem;
+				background: red;
+			}
+		}
+	}
+
+	.window {
+		max-width: 100%;
+		padding: 0 2rem;
+		background: white;
+		overflow: scroll;
+		height: 100%;
+	}
 
 	@include md {
 		max-width: 60%;
@@ -12,12 +55,12 @@
 }
 
 .content {
+	background: rgb(241, 241, 241);
 	height: auto;
-	padding: 2.5rem 0;
+	padding: 2.5rem 2.5rem;
 	margin: 0 auto;
-	max-width: 100%;
 
 	@include md {
-		padding: 5rem 0;
+		padding: 5rem 5rem;
 	}
 }

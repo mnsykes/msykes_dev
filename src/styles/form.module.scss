@@ -2,7 +2,7 @@
 @import "mixins";
 
 h1 {
-	text-align: center;
+	text-align: left;
 	text-transform: uppercase;
 	font-weight: bold;
 }
@@ -10,7 +10,7 @@ h1 {
 h2 {
 	font-weight: bold;
 	text-transform: uppercase;
-	text-align: center;
+	text-align: left;
 	margin-bottom: 2rem;
 }
 
@@ -40,6 +40,7 @@ h2 {
 		text-transform: uppercase;
 		font-size: 1.25rem;
 		padding-bottom: 0.5rem;
+		color: $blue;
 	}
 }
 
@@ -59,7 +60,7 @@ h2 {
 .submitBtn {
 	padding: 10px 5px;
 	width: 100%;
-	background: $background;
+	background: $blue;
 	color: white;
 	font-weight: bold;
 	outline: none;
@@ -69,6 +70,7 @@ h2 {
 	text-transform: uppercase;
 
 	&:hover {
-		background: $blue;
+		background: $yellow;
+		border-bottom: 5px solid $blue;
 	}
 }

@@ -1,9 +1,11 @@
-@import "mixins";
-@import "colors";
+@import "../../styles/mixins";
+@import "../../styles/colors";
 
 h1 {
+	text-align: left;
 	text-transform: uppercase;
 	font-weight: bold;
+	padding-bottom: 1rem;
 }
 
 h3 {
@@ -12,6 +14,7 @@ h3 {
 }
 
 .card {
+	padding: 1rem;
 	display: grid;
 	grid-template-columns: 1fr;
 	gap: 2rem;
@@ -33,6 +36,7 @@ h3 {
 		.gitLink {
 			color: $blue;
 			margin-left: 1rem;
+			font-size: 2rem;
 
 			&:hover {
 				color: $yellow;
@@ -40,8 +44,8 @@ h3 {
 		}
 	}
 
-	@include lg {
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-	}
+	// @include lg {
+	// 	display: grid;
+	// 	grid-template-columns: 1fr 1fr;
+	// }
 }

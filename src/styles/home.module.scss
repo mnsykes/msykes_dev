@@ -4,35 +4,52 @@
 .face {
 	// margin: 0 auto;
 	display: flex;
+	margin: 0 auto;
 
 	.myFace {
-		max-width: 200px;
+		max-width: 150px;
 		height: auto;
 	}
 
-	h1 {
-		padding-top: 7rem;
-		font-weight: bold;
-		text-transform: uppercase;
-		color: $blue;
+	.title {
+		padding-top: 3rem;
+		h1 {
+			font-weight: bold;
+			text-transform: uppercase;
+			color: $blue;
+		}
+
+		@include md {
+			padding: 1rem 0 0 2rem;
+		}
 	}
 
-	.cta {
-		max-width: 100%;
-		margin: 0 auto;
+	@include md {
+		max-width: 60%;
+	}
+}
 
-		h2 {
-			font-weight: 300;
-			line-height: 1.5em;
+.cta {
+	max-width: 100%;
+	margin: 0 auto;
+	padding: 1.5rem 0;
+	line-height: 2em;
+
+	h3 {
+		text-align: left;
+		font-weight: 400;
+	}
+
+	.ctaLink {
+		font-weight: bold;
+
+		&:hover {
+			color: $aqua;
+			text-decoration: underline $yellow;
 		}
+	}
 
-		.ctaLink {
-			font-weight: bold;
-
-			&:hover {
-				color: $aqua;
-				text-decoration: underline $yellow;
-			}
-		}
+	@include md {
+		max-width: 60%;
 	}
 }

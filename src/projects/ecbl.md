@@ -7,6 +7,15 @@ thumbs: ./thumbs/ecbl.jpg
 slug: projects/ecbl
 ---
 
-This is a simple diary app, but it essentially functions the same way a to-do app would (because doesn't everybody have to include a to-do app in their portfolio).
+This was the final project for my intro to HTML course and it was the first website
+that I made. The site is for a fictitious basketball league. It was built with HTML
+and CSS. I was also taking an intro to JavaScript at the time so I included some of
+the jQuery that I had learned up to that point. The only links that are live on the
+site are for the Providence Roosters. All team pages would have been the same so I was
+only required to complete all the pages for one team as an example. Because the site
+was never meant to be anything except for an school project, I used player names and
+images from the 2019 Providence Friars basketball team. I'm currently in the process
+refactoring the site using GatsbyJS to make it a better showpiece for my skills. In
+it's current state it is completely unresponsive and breaks on smaller screens.
 
-Type an entry into the text area, hit submit, and your entry is stored in the box below. That's all there is to it.
+**This project was for academic purposes.**

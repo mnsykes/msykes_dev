@@ -3,6 +3,7 @@ import { graphql, useStaticQuery } from "gatsby";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { GatsbyImage } from "gatsby-plugin-image";
+import { card, imgArea, descArea, cardImage, gitLink } from "./compstyles/projects.module.scss";
 
 export default function ProjectCard() {
 	const data = useStaticQuery(graphql`
@@ -32,27 +33,32 @@ export default function ProjectCard() {
 
 	return (
 		<div>
-			<h1>Markdown Files</h1>
+			<h1>Projects</h1>
 			{projects.map((project) => (
-				<div>
-					<div>
+				<div className={card}>
+					<div className={imgArea}>
 						<a href={project.frontmatter.url}>
 							<GatsbyImage
 								image={project.frontmatter.thumbs.childImageSharp.gatsbyImageData}
-								alt="images"
+								alt={project.frontmatter.title}
+								className={cardImage}
 							/>
 						</a>
 					</div>
-					<p>
-						Project title: {project.frontmatter.title}{" "}
-						<span>
-							<a href={project.frontmatter.git}>
-								<FontAwesomeIcon icon={faGithub} />
-							</a>{" "}
-						</span>
-					</p>
-					<p>Stack: {project.frontmatter.stack}</p>
-					<div dangerouslySetInnerHTML={{ __html: project.html }} />
+					<div className={descArea}>
+						<h3>
+							Project title: {project.frontmatter.title}{" "}
+							<span>
+								<a href={project.frontmatter.git}>
+									<FontAwesomeIcon icon={faGithub} className={gitLink} />
+								</a>{" "}
+							</span>
+						</h3>
+						<br />
+						<h3>Stack: {project.frontmatter.stack}</h3>
+						<br />
+						<div dangerouslySetInnerHTML={{ __html: project.html }} />
+					</div>
 				</div>
 			))}
 		</div>
