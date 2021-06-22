@@ -3,8 +3,11 @@
 
 .face {
 	// margin: 0 auto;
+	border-bottom: 4px solid $yellow;
+	background: $blue;
 	display: flex;
 	margin: 0 auto;
+
 
 	.myFace {
 		max-width: 150px;
@@ -14,9 +17,9 @@
 	.title {
 		padding-top: 3rem;
 		h1 {
+			color: white;
 			font-weight: bold;
 			text-transform: uppercase;
-			color: $blue;
 		}
 
 		@include md {
@@ -44,8 +47,8 @@
 		font-weight: bold;
 
 		&:hover {
-			color: $aqua;
-			text-decoration: underline $yellow;
+			color: $yellow;
+			text-decoration: underline $blue;
 		}
 	}
 

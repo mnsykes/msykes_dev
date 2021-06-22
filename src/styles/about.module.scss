@@ -2,28 +2,32 @@
 @import "colors";
 
 .aboutGrid {
+	box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
 	margin: 0 auto;
 	display: grid;
 	grid-template-columns: 1fr;
-	gap: 1.5rem;
+	// gap: 1.5rem;
 
-	h1 {
-		text-align: left;
-		text-transform: uppercase;
-		font-weight: bold;
+	.aboutTitle {
+		border-bottom: 4px solid $yellow;
+		background: $blue;
+	
+		h1 {
+			text-align: left;
+			text-transform: uppercase;
+			font-weight: bold;
+			padding: 1rem;
+			color: white;
+		}
 	}
 
 	.aboutText {
-		max-width: 84ch;
-	}
+		padding: 0.5rem 1rem;
 
-	.emojiList {
-		margin: 0 auto;
-		line-height: 2rem;
-		display: flex;
-
-		div {
-			padding: 0 1rem;
+		@include md {
+			padding: 2rem;
 		}
 	}
+
+	
 }

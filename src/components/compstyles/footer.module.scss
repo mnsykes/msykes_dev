@@ -5,7 +5,7 @@
 	text-align: center;
 	position: relative;
 	bottom: 0;
-	background: rgb(241, 241, 241);
+	
 
 	a {
 		font-size: 2rem;
@@ -13,7 +13,7 @@
 		color: $blue;
 
 		&:hover {
-			color: white;
+			color: $yellow;
 		}
 	}
 }

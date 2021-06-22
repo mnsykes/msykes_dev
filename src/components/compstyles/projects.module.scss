@@ -1,11 +1,17 @@
 @import "../../styles/mixins";
 @import "../../styles/colors";
 
-h1 {
-	text-align: left;
-	text-transform: uppercase;
-	font-weight: bold;
-	padding-bottom: 1rem;
+.projectTitle {
+	border-bottom: 4px solid $yellow;
+	background: $blue;
+
+	h1 {
+		text-align: left;
+		text-transform: uppercase;
+		font-weight: bold;
+		padding: 1rem;
+		color: white;
+	}
 }
 
 h3 {
@@ -14,25 +20,41 @@ h3 {
 }
 
 .card {
-	padding: 1rem;
+	box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
 	display: grid;
 	grid-template-columns: 1fr;
-	gap: 2rem;
+	// gap: 2rem;
 	margin: 0 auto 4rem auto;
+	background: white;
 
 	.imgArea {
+		
+
 		a {
 			&:hover {
 				transform: scale(1.1);
 			}
 		}
 		.cardImage {
-			width: 100%;
-			height: auto;
+
+			&:hover {
+				opacity: 0.8;
+			}
 		}
 	}
 
 	.descArea {
+		padding: 1rem 0.5rem 1.5rem 0.5rem;
+
+		a {
+			color: $blue;
+			text-decoration: none;
+			&:hover {
+				color: $yellow;
+				text-decoration: underline $blue;
+			}
+		}
+
 		.gitLink {
 			color: $blue;
 			margin-left: 1rem;

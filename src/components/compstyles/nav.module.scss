@@ -1,65 +1,78 @@
 @import "../../styles/colors";
 @import "../../styles/mixins";
 
-.navContainer {
-	display: grid;
-	grid-template-columns: 1fr;
-	padding-top: 0.5rem;
+.navBar {
 	background: $blue;
-
-	.logo {
-		.logoLink {
-			color: white;
-			text-decoration: 5px underline $yellow;
-			font-weight: bold;
-			text-align: center;
-
-			&:hover {
-				color: $yellow;
+	box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+	
+	
+		.logo {
+			.logoLink {
+				color: white;
+				text-decoration: 5px underline $yellow;
 				font-weight: bold;
-				text-decoration: 5px underline white;
-			}
-
-			@include md {
 				text-align: left;
-				padding-left: 1.5rem;
+				padding: 1rem 1rem;
+	
+				&:hover {
+					color: $yellow;
+					font-weight: bold;
+					text-decoration: 5px underline white;
+				}
+	
+				@include md {
+					display: flex;
+					justify-content: flex-start;
+					align-items: flex-start;
+					text-align: left;
+					padding-bottom: 0.25rem;
+					
+				}
 			}
-		}
-	} // end logo
 
-	.navLinks {
-		display: flex;
-		align-items: flex-end;
-		justify-content: center;
-		padding-bottom: 0.5rem;
-
-		.navLink {
-			color: white;
-			padding: 0 1rem;
-			text-decoration: none;
+		} // end logo
+	
+		.navLinks {
+			color: $yellow;
 			font-weight: bold;
-			text-transform: uppercase;
+			display: flex;
+			justify-content: flex-start;
+	
+			.navLink {
+				font-size: 0.75rem;
+				padding: 0.5rem 1rem;
+				text-decoration: none;
+				font-weight: bold;
+				text-transform: uppercase;
+	
+				&:hover {
+					transform: scale(1.1);
+					color: white;
+					text-decoration: underline $yellow;
+				}
+	
+				&:focus {
+					outline: none;
+					text-decoration: underline $yellow;
+				}
 
-			&:hover {
-				transform: scale(1.1);
-				color: $yellow;
-				text-decoration: underline $yellow;
+				@include md {
+					font-size: 1rem;
+				}
+			} // end link
+	
+			@include md {
+				display: flex;
+				justify-content: flex-end;
+				align-items: flex-end;
 			}
-
-			&:focus {
-				outline: none;
-				text-decoration: underline $yellow;
-			}
-		} // end link
-
+		} // end navLinks
+	
 		@include md {
 			display: flex;
-			justify-content: flex-end;
+			flex-direction: row;
+			justify-content: space-between;
 		}
-	} // end navLinks
-
-	@include md {
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-	}
+	
+	
 } // end nav container

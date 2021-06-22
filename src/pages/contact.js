@@ -1,6 +1,8 @@
 import React from "react";
 import Layout from "../components/Layout";
 import {
+	formWrapper,
+	formTitle,
 	contactForm,
 	inputWrapper,
 	inputGroup,
@@ -12,10 +14,10 @@ import {
 export default function contact() {
 	return (
 		<Layout>
-			<div>
-				<h1>Get In Touch</h1>
-				<br />
-				<h2>Especially if you want to hire me!</h2>
+			<div className={formWrapper}>
+				<div className={formTitle}>
+					<h1>Say Hi!</h1>
+				</div>
 				<form
 					className={contactForm}
 					name="contact-form"

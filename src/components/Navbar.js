@@ -1,10 +1,11 @@
 import React from "react";
 import { Link } from "gatsby";
-import { navContainer, logo, logoLink, navLinks, navLink } from "./compstyles/nav.module.scss";
+import { navBar, logo, logoLink, navLinks, navLink } from "./compstyles/nav.module.scss";
 
 export default function Navbar() {
+
 	return (
-		<nav className={navContainer}>
+		<nav className={navBar}> 
 			<div className={logo}>
 				<Link to="/">
 					<h1 className={logoLink}>MS</h1>
@@ -24,6 +25,8 @@ export default function Navbar() {
 					Contact
 				</Link>
 			</div>
+			
+			
 		</nav>
 	);
 }

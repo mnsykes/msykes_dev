@@ -20,13 +20,16 @@ export default function Footer() {
 			<br />
 			<div>
 				<h3>Made with: </h3>
-				<StaticImage
-					src="../images/icon.png"
-					alt="Gatsby logo"
-					placeholder="blurred"
-					width={50}
-					height={50}
-				/>
+				<br />
+				<a href="https://www.gatsbyjs.com/">
+					<StaticImage
+						src="../images/icon.png"
+						alt="Gatsby logo"
+						placeholder="blurred"
+						width={50}
+						height={50}
+					/>
+				</a>
 			</div>
 		</footer>
 	);

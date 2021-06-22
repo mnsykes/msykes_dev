@@ -1,13 +1,15 @@
 import React from "react";
 import Layout from "../components/Layout";
-import { aboutGrid, aboutText, emojiList } from "../styles/about.module.scss";
+import { aboutGrid, aboutText, aboutTitle } from "../styles/about.module.scss";
 
 export default function about() {
 	return (
 		<Layout>
 			<div>
 				<div className={aboutGrid}>
-					<h1>About</h1>
+					<div className={aboutTitle}>
+						<h1>About</h1>
+					</div>
 					<div className={aboutText}>
 						<p>
 							I'm a new developer looking for my first job. After spending most of my adult life
@@ -23,50 +25,19 @@ export default function about() {
 						<br />
 						<p>
 							I was able to take a variety of courses at UMass that included: HTML, CSS, JavaScript,
-							jQuery, SQL, ColdFusion, Python, Ruby, PERL, and C.
+							jQuery, SQL, ColdFusion, Python, and C.
 						</p>
 						<br />
 						<p>
-							Beyond school, I spend any free moment I have trying to learn more about development.
-							Whether it's watching a Udemy course while washing dishes, listening to a podcast in
+							Beyond school, I have spent time learning Gatsby, React, and Django to name a few things. Any free moment I have is spent trying to learn more about development: whether it's watching a Udemy course while washing dishes, listening to a podcast in
 							the car, or reading a book waiting to see the doctor, I'm constantly trying to do
-							whatever I can to reach my goal of becoming a developer.
+							whatever I can to reach my goal of becoming a developer. 
 						</p>
 						<br />
 						<p>
 							When I'm not watching YouTube tutorials, reading docs, thinking about code, or trying
 							to learn something new you'll find me spending time with my family.
 						</p>
-					</div>
-					<div className={emojiList}>
-						<div>
-							<p>
-								<span role="img" aria-label="img">
-									💑
-								</span>{" "}
-								Husband
-							</p>
-							<p>
-								<span role="img" aria-label="img">
-									👨‍👧‍👧
-								</span>{" "}
-								Father of Two
-							</p>
-						</div>
-						<div>
-							<p>
-								<span role="img" aria-label="img">
-									🐕
-								</span>{" "}
-								Dog Dad
-							</p>
-							<p>
-								<span role="img" aria-label="img">
-									☕
-								</span>{" "}
-								Black Coffee Drinker
-							</p>
-						</div>
 					</div>
 				</div>
 			</div>
