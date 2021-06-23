@@ -1,8 +1,8 @@
 ---
 title: Seeds of Solidarity
 stack: HTML, CSS, JavaScript
-url: https://friendly-borg-85bda9.netlify.app/
-git: https://github.com/mnsykes/diary
+url: https://upbeat-perlman-79a42e.netlify.app/
+git: https://github.com/mnsykes/seeds
 thumbs: ./thumbs/seeds.jpg
 slug: projects/seeds
 ---

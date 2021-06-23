@@ -1,8 +1,8 @@
 ---
 title: ECBL
 stack: HTML, CSS, JavaScript
-url: https://friendly-borg-85bda9.netlify.app/
-git: https://github.com/mnsykes/diary
+url: https://admiring-johnson-83ee21.netlify.app/
+git: https://github.com/mnsykes/ecbl
 thumbs: ./thumbs/ecbl.jpg
 slug: projects/ecbl
 ---

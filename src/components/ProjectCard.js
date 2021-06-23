@@ -3,7 +3,14 @@ import { graphql, useStaticQuery } from "gatsby";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { GatsbyImage } from "gatsby-plugin-image";
-import { projectTitle, card, imgArea, descArea, cardImage, gitLink } from "./compstyles/projects.module.scss";
+import {
+	projectTitle,
+	card,
+	imgArea,
+	descArea,
+	cardImage,
+	gitLink
+} from "./compstyles/projects.module.scss";
 
 export default function ProjectCard() {
 	const data = useStaticQuery(graphql`
@@ -39,7 +46,7 @@ export default function ProjectCard() {
 			{projects.map((project) => (
 				<div className={card}>
 					<div className={imgArea}>
-						<a href={project.frontmatter.url}>
+						<a href={project.frontmatter.url} target="_blank" rel="noreferrer noopener">
 							<GatsbyImage
 								image={project.frontmatter.thumbs.childImageSharp.gatsbyImageData}
 								alt={project.frontmatter.title}
@@ -51,7 +58,7 @@ export default function ProjectCard() {
 						<h3>
 							Project title: {project.frontmatter.title}{" "}
 							<span>
-								<a href={project.frontmatter.git}>
+								<a href={project.frontmatter.git} target="_blank" rel="noreferrer noopener">
 									<FontAwesomeIcon icon={faGithub} className={gitLink} />
 								</a>{" "}
 							</span>
