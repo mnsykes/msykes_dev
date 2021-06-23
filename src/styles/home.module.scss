@@ -1,56 +1,52 @@
 @import "mixins";
 @import "colors";
 
-.face {
-	border-bottom: 4px solid $yellow;
-	background: $blue;
-	display: flex;
+.homeWrapper {
 	margin: 0 auto;
-
-	.myFace {
-		max-width: 150px;
-		height: auto;
-	}
-
-	.title {
-		padding-top: 3rem;
-		h1 {
-			color: white;
-			font-weight: bold;
-			text-transform: uppercase;
-		}
-
-		@include md {
-			padding: 1rem 0 0 2rem;
-		}
-	}
-
-	@include md {
-		max-width: 60%;
-	}
-}
-
-.cta {
 	max-width: 100%;
-	margin: 0 auto;
-	padding: 1.5rem 0;
-	line-height: 2em;
+	.face {
+		border-bottom: 4px solid $yellow;
+		background: $blue;
+		display: flex;
+		margin: 0 auto;
 
-	h3 {
-		text-align: left;
-		font-weight: 400;
-	}
-
-	.ctaLink {
-		font-weight: bold;
-
-		&:hover {
-			color: $yellow;
-			text-decoration: underline $blue;
+		.myFace {
+			max-width: 10rem;
+			height: auto;
 		}
-	}
 
-	@include md {
-		max-width: 60%;
-	}
-}
+		.title {
+			padding-top: 3rem;
+
+			h1 {
+				color: white;
+				font-weight: bold;
+				text-transform: uppercase;
+			}
+
+			@include md {
+				padding: 3rem 0 0 2rem;
+			}
+		}
+		@include md {
+			padding-left: 3rem;
+		}
+	} // end face
+
+	.cta {
+		max-width: 100%;
+		margin: 0 auto;
+		padding: 1.5rem 0;
+		line-height: 2em;
+
+		h3 {
+			text-align: left;
+			font-weight: 400;
+		}
+
+		.ctaLink {
+			@include copyLinks;
+			font-weight: bold;
+		}
+	} // end cta
+} // end home wrapper

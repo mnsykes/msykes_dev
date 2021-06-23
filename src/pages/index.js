@@ -3,14 +3,14 @@ import { Helmet } from "react-helmet";
 import { Link } from "gatsby";
 import Layout from "../components/Layout";
 import Memoji from "../components/Memoji";
-import { face, myFace, title, cta, ctaLink } from "../styles/home.module.scss";
+import { homeWrapper, face, myFace, title, cta, ctaLink } from "../styles/home.module.scss";
 import "../styles/main.scss";
 
 // markup
 export default function IndexPage() {
 	return (
 		<Layout>
-			<div>
+			<div className={homeWrapper}>
 				<Helmet htmlAttributes={{ lang: "en" }} title="Matthew Sykes - Front End Developer" />
 				<div className={face}>
 					<div className={myFace}>

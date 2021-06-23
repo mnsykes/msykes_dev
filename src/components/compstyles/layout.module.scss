@@ -5,7 +5,7 @@
 	height: 100vh;
 	max-width: 95%;
 	margin: 0 auto;
-	padding: 4rem 0;
+	padding: 3rem 0;
 
 	.topBar {
 		background: lightgray;
@@ -44,23 +44,34 @@
 	.window {
 		max-width: 100%;
 		padding: 0.5rem;
-		background: white;
+		background: rgb(241, 241, 241);
 		overflow: scroll;
 		height: 100%;
+
+		.content {
+			height: auto;
+			padding: 2.5rem 0.5rem;
+			margin: 0 auto;
+
+			@include md {
+				padding: 5rem 5rem;
+			}
+		}
+	}
+
+	@include sm {
+		max-width: 90%;
 	}
 
 	@include md {
+		max-width: 85%;
+	}
+
+	@include lg {
+		max-width: 70%;
+	}
+
+	@include xl {
 		max-width: 60%;
 	}
 } // end container
-
-.content {
-	background: white;
-	height: auto;
-	padding: 2.5rem 0.5rem;
-	margin: 0 auto;
-
-	@include md {
-		padding: 5rem 5rem;
-	}
-}

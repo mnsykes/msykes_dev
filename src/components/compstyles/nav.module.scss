@@ -3,76 +3,71 @@
 
 .navBar {
 	background: $blue;
-	box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
-	
-	
-		.logo {
-			.logoLink {
-				color: white;
-				text-decoration: 5px underline $yellow;
+
+	.logo {
+		.logoLink {
+			color: white;
+			text-decoration: 5px underline $yellow;
+			font-weight: bold;
+			text-align: left;
+			padding: 0.5rem 1rem;
+
+			&:hover {
+				color: $yellow;
 				font-weight: bold;
-				text-align: left;
-				padding: 1rem 1rem;
-	
-				&:hover {
-					color: $yellow;
-					font-weight: bold;
-					text-decoration: 5px underline white;
-				}
-	
-				@include md {
-					display: flex;
-					justify-content: flex-start;
-					align-items: flex-start;
-					text-align: left;
-					padding-bottom: 0.25rem;
-					
-				}
+				text-decoration: 5px underline white;
 			}
 
-		} // end logo
-	
-		.navLinks {
-			color: $yellow;
-			font-weight: bold;
-			display: flex;
-			justify-content: flex-start;
-	
-			.navLink {
-				font-size: 0.75rem;
-				padding: 0.5rem 1rem;
-				text-decoration: none;
-				font-weight: bold;
-				text-transform: uppercase;
-	
-				&:hover {
-					transform: scale(1.1);
-					color: white;
-					text-decoration: underline $yellow;
-				}
-	
-				&:focus {
-					outline: none;
-					text-decoration: underline $yellow;
-				}
-
-				@include md {
-					font-size: 1rem;
-				}
-			} // end link
-	
 			@include md {
 				display: flex;
-				justify-content: flex-end;
-				align-items: flex-end;
+				justify-content: flex-start;
+				align-items: flex-start;
+				text-align: left;
+				padding-bottom: 0.25rem;
 			}
-		} // end navLinks
-	
+		}
+	} // end logo
+
+	.navLinks {
+		color: $yellow;
+		font-weight: bold;
+		display: flex;
+		justify-content: flex-start;
+
+		.navLink {
+			font-size: 0.75rem;
+			padding: 0.5rem 1rem;
+			text-decoration: none;
+			font-weight: bold;
+			text-transform: uppercase;
+
+			&:hover {
+				transform: scale(1.1);
+				color: white;
+				text-decoration: underline $yellow;
+			}
+
+			&:focus {
+				outline: none;
+				text-decoration: underline $yellow;
+			}
+
+			@include md {
+				font-size: 1rem;
+			}
+		} // end link
+
 		@include md {
 			display: flex;
-			flex-direction: row;
-			justify-content: space-between;
+			justify-content: flex-end;
+			align-items: flex-end;
 		}
-	
-	
+	} // end navLinks
+
+	@include md {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		padding: 1rem;
+	}
 } // end nav container

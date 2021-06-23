@@ -2,28 +2,12 @@
 @import "../../styles/colors";
 
 .projectTitle {
-	border-bottom: 4px solid $yellow;
-	background: $blue;
-
-	h1 {
-		text-align: left;
-		text-transform: uppercase;
-		font-weight: bold;
-		padding: 1rem;
-		color: white;
-	}
-}
-
-h3 {
-	color: $background;
-	font-weight: bold;
+	@include pageTitle;
+	margin-bottom: 2rem;
 }
 
 .card {
-	box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
-	display: grid;
-	grid-template-columns: 1fr;
-	// gap: 2rem;
+	@include shadow;
 	margin: 0 auto 4rem auto;
 	background: white;
 
@@ -38,28 +22,38 @@ h3 {
 				opacity: 0.8;
 			}
 		}
-	}
+	} // end img area
+
+	.description {
+		padding: 0.5rem;
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+
+		h3 {
+			color: $background;
+			font-weight: bold;
+			text-align: left;
+		}
+
+		a {
+			padding-right: 2rem;
+			@include socialIcon;
+			font-size: 2.5rem;
+		}
+	} // end description
 
 	.descArea {
 		padding: 1rem 0.5rem 1.5rem 0.5rem;
 
 		a {
-			color: $blue;
-			text-decoration: none;
-			&:hover {
-				color: $yellow;
-				text-decoration: underline $blue;
-			}
+			@include copyLinks;
 		}
 
 		.gitLink {
-			color: $blue;
+			@include socialIcon;
 			margin-left: 1rem;
 			font-size: 2rem;
-
-			&:hover {
-				color: $yellow;
-			}
 		}
-	}
-}
+	} // end desc area
+} // end card

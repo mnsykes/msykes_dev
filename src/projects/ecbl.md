@@ -13,7 +13,7 @@ and CSS. I was also taking an intro to JavaScript at the time so I included some
 the jQuery that I had learned up to that point. The only links that are live on the
 site are for the Providence Roosters. All team pages would have been the same so I was
 only required to complete all the pages for one team as an example. Because the site
-was never meant to be anything except for an school project, I used player names and
+was only intended to be a school project, I used player names and
 images from the 2019 Providence Friars basketball team. I'm currently in the process
 refactoring the site using GatsbyJS to make it a better showpiece for my skills. In
 it's current state it is completely unresponsive and breaks on smaller screens.

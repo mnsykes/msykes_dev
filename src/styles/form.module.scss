@@ -2,21 +2,16 @@
 @import "mixins";
 
 .formWrapper {
-	box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+	@include shadow;
 	padding: 0.75rem 1.5rem;
 
 	.formTitle {
-		border-bottom: 4px solid $yellow;
-		background: $blue;
+		@include pageTitle;
 
 		h1 {
-			color: white;
 			text-align: center;
-			text-transform: uppercase;
-			font-weight: bold;
-			padding: 1rem;
 		}
-	}
+	} // end form title
 
 	.contactForm {
 		margin: 0 auto;
@@ -73,9 +68,5 @@
 				border-bottom: 5px solid $blue;
 			}
 		}
-
-		@include md {
-			padding: 2rem 8rem;
-		}
-	}
-}
+	} // end contact form
+} // end form wrapper

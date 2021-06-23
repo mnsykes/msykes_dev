@@ -2,6 +2,7 @@
 @import "mixins";
 @import "colors";
 
+// Global styles
 * {
 	margin: 0;
 	padding: 0;
@@ -10,8 +11,8 @@
 
 body,
 html {
-	height: 100%;
-	width: 100%;
+	height: 100vh;
+	width: 100vw;
 	color: #333;
 	background: rgba($color: #000000, $alpha: 0.5);
 	font-family: "Roboto", sans-serif;
@@ -27,14 +28,4 @@ p {
 
 ul {
 	list-style: none;
-}
-
-@include md {
-	p {
-		font-size: 1.25em;
-	}
-
-	h1 {
-		font-size: 3rem;
-	}
 }

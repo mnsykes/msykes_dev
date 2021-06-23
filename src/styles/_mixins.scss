@@ -1,3 +1,4 @@
+// Screen sizes and media queries
 $screen-xs: 0;
 $screen-sm: 576px;
 $screen-md: 768px;
@@ -34,64 +35,42 @@ $screen-xl: 1200px;
 	}
 }
 
-@mixin btn-border-drawing(
-	$color: #ccc,
-	$hover: black,
-	$width: 2px,
-	$vertical: top,
-	$horizontal: left,
-	$duration: 0.25s
-) {
-	box-shadow: inset 0 0 0 $width $color;
-	color: $color;
-	transition: color $duration $duration/3;
-	position: relative;
+// Page title style
+@mixin pageTitle {
+	border-bottom: 4px solid $yellow;
+	background: $blue;
 
-	&::before,
-	&::after {
-		border: 0 solid transparent;
-		box-sizing: border-box;
-		content: "";
-		pointer-events: none;
-		position: absolute;
-		width: 0;
-		height: 0;
-
-		#{$vertical}: 0;
-		#{$horizontal}: 0;
+	h1 {
+		text-align: left;
+		text-transform: uppercase;
+		font-weight: bold;
+		padding: 1rem;
+		color: white;
 	}
+}
 
-	&::before {
-		$h-side: if($horizontal == "left", "right", "left");
-
-		border-#{$vertical}-width: $width;
-		border-#{$h-side}-width: $width;
-	}
-
-	&::after {
-		$v-side: if($vertical == "top", "bottom", "top");
-
-		border-#{$v-side}-width: $width;
-		border-#{$horizontal}-width: $width;
-	}
+// Body copy link styles
+@mixin copyLinks {
+	color: $blue;
+	text-decoration: none;
 
 	&:hover {
-		color: $hover;
-
-		&::before,
-		&::after {
-			border-color: $hover;
-			transition: border-color 0s, width $duration, height $duration;
-			width: 100%;
-			height: 100%;
-		}
-
-		&::before {
-			transition-delay: 0s, 0s, $duration;
-		}
-
-		&::after {
-			transition-delay: 0s, $duration, 0s;
-		}
+		color: $yellow;
+		text-decoration: underline $blue;
 	}
+}
+
+// Social icon styles
+@mixin socialIcon {
+	color: $blue;
+
+	&:hover {
+		color: $yellow;
+		transform: scale(1.1);
+	}
+}
+
+// Box shadow
+@mixin shadow {
+	box-shadow: rgba(27, 31, 35, 0.04) 0px 1px 0px, rgba(255, 255, 255, 0.25) 0px 1px 0px inset;
 }
