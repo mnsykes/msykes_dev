@@ -1,17 +1,52 @@
 import React from "react";
 import { graphql, useStaticQuery } from "gatsby";
+import styled from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { GatsbyImage } from "gatsby-plugin-image";
-import {
-	projectTitle,
-	card,
-	imgArea,
-	description,
-	descArea,
-	cardImage,
-	gitLink
-} from "./compstyles/projects.module.scss";
+import TitleCard from "./TitleCard";
+
+const Card = styled.div`
+	margin: 0 auto 4rem auto;
+	background: white;
+`;
+
+const ImgArea = styled.div`
+	border: 3px solid green;
+`;
+
+const CardImage = styled(GatsbyImage)`
+	:hover {
+		opacity: 0.8;
+	}
+`;
+
+const Description = styled.div`
+	padding: 0.5rem;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+
+	h3 {
+		font-weight: bold;
+		text-align: left;
+	}
+
+	a {
+		padding-right: 2rem;
+		font-size: 2.5rem;
+	}
+`;
+
+const DescriptionArea = styled.div`
+	padding: 1rem 0.5rem 1.5rem 0.5rem;
+`;
+
+const GitLink = styled(FontAwesomeIcon)`
+	margin-left: 1rem;
+	font-size: 2rem;
+	color: red;
+`;
 
 // function using graqhql to generate project cards from
 // markdown files
@@ -41,36 +76,33 @@ export default function ProjectCard() {
 
 	const projects = data.allMarkdownRemark.nodes;
 	const projectList = projects.map((project) => (
-		<div className={card}>
-			<div className={imgArea}>
+		<Card>
+			<ImgArea>
 				<a href={project.frontmatter.url} target="_blank" rel="noreferrer noopener">
-					<GatsbyImage
+					<CardImage
 						image={project.frontmatter.thumbs.childImageSharp.gatsbyImageData}
 						alt={project.frontmatter.title}
-						className={cardImage}
 					/>
 				</a>
-			</div>
-			<div className={description}>
+			</ImgArea>
+			<Description>
 				<a href={project.frontmatter.git} target="_blank" rel="noreferrer noopener">
-					<FontAwesomeIcon icon={faGithub} className={gitLink} />
+					<GitLink icon={faGithub} />
 				</a>{" "}
 				<div>
 					<h3>Project title: {project.frontmatter.title} </h3>
 					<h3>Stack: {project.frontmatter.stack}</h3>
 				</div>
-			</div>
-			<div className={descArea}>
+			</Description>
+			<DescriptionArea>
 				<div dangerouslySetInnerHTML={{ __html: project.html }} />
-			</div>
-		</div>
+			</DescriptionArea>
+		</Card>
 	));
 
 	return (
 		<div>
-			<div className={projectTitle}>
-				<h1>Projects</h1>
-			</div>
+			<TitleCard title="Projects" />
 			{projectList}
 		</div>
 	);

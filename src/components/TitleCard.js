@@ -1,5 +1,4 @@
 import React from "react";
-import { graphql, useStaticQuery } from "gatsby";
 import styled from "styled-components";
 
 const Card = styled.div`
@@ -15,27 +14,11 @@ const PageTitle = styled.h1`
 `;
 
 // Make markdown files for each page
-export default function TitleCard() {
-	const getTitles = useStaticQuery(graphql`
-		{
-			site {
-				siteMetadata {
-					menuLinks {
-						name
-						link
-					}
-				}
-			}
-		}
-	`);
-
-	const titles = getTitles.site.siteMetadata.menuLinks;
-	const titleList = titles.map((title) => <PageTitle>{title.name}</PageTitle>);
-
+export default function TitleCard(props) {
 	return (
 		<div>
 			<Card>
-				<PageTitle>{titleList}</PageTitle>
+				<PageTitle>{props.title}</PageTitle>
 			</Card>
 		</div>
 	);

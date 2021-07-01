@@ -1,15 +1,34 @@
 import React from "react";
 import Layout from "../components/Layout";
-import { aboutGrid, aboutText } from "../styles/about.module.scss";
 import TitleCard from "../components/TitleCard";
+import styled from "styled-components";
+
+const AboutGrid = styled.div`
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: 1fr;
+`;
+
+// const PageTitle = styled.div`
+// 	border-bottom: 4px solid yellow;
+// 	background: blue;
+
+// 	h1 {
+// 		text-align: left;
+// 		text-transform: uppercase;
+// 		font-weight: bold;
+// 		padding: 1rem;
+// 		color: white;
+// 	}
+// `;
 
 export default function about() {
 	return (
 		<Layout>
 			<div>
-				<div className={aboutGrid}>
-					<TitleCard />
-					<div className={aboutText}>
+				<AboutGrid>
+					<TitleCard title="About" />
+					<div>
 						<p>
 							I'm a new developer looking for my first job. After spending most of my adult life
 							working dead-end jobs, I decided that I owed it to both myself and my family to find a
@@ -40,7 +59,7 @@ export default function about() {
 							to learn something new you'll find me spending time with my family.
 						</p>
 					</div>
-				</div>
+				</AboutGrid>
 			</div>
 		</Layout>
 	);
