@@ -1,5 +1,4 @@
 import React from "react";
-// import { container } from "./compstyles/layout.module.scss";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import Window from "./Window";

@@ -1,8 +1,16 @@
 import React, { useState } from "react";
 import { Link } from "gatsby";
-import { logo, logoLink } from "./compstyles/nav.module.scss";
 import styled from "styled-components";
 import NavLinks from "./NavLinks";
+
+const Logo = styled.h1`
+	color: blue;
+	border-bottom: 5px solid red;
+
+	:hover {
+		border-bottom: 5px solid yellow;
+	}
+`;
 
 const Navigation = styled.nav`
 	display: flex;
@@ -92,9 +100,9 @@ export default function Navbar() {
 	const [navbarOpen, setNavbarOpen] = useState(false);
 	return (
 		<Navigation>
-			<div className={logo}>
+			<div>
 				<Link to="/">
-					<h1 className={logoLink}>MS</h1>
+					<Logo>MS</Logo>
 				</Link>
 			</div>
 			<Toggle navbarOpen={navbarOpen} onClick={() => setNavbarOpen(!navbarOpen)}>

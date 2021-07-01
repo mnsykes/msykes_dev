@@ -38,7 +38,7 @@ export default function ProjectCard() {
 			}
 		}
 	`);
-	console.log(data);
+
 	const projects = data.allMarkdownRemark.nodes;
 	const projectList = projects.map((project) => (
 		<div className={card}>

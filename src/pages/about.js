@@ -1,15 +1,14 @@
 import React from "react";
 import Layout from "../components/Layout";
-import { aboutGrid, aboutText, aboutTitle } from "../styles/about.module.scss";
+import { aboutGrid, aboutText } from "../styles/about.module.scss";
+import TitleCard from "../components/TitleCard";
 
 export default function about() {
 	return (
 		<Layout>
 			<div>
 				<div className={aboutGrid}>
-					<div className={aboutTitle}>
-						<h1>About</h1>
-					</div>
+					<TitleCard />
 					<div className={aboutText}>
 						<p>
 							I'm a new developer looking for my first job. After spending most of my adult life

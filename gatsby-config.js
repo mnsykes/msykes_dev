@@ -1,6 +1,24 @@
 module.exports = {
 	siteMetadata: {
-		title: "msykes_dev"
+		title: "Matthew Sykes",
+		menuLinks: [
+			{
+				name: "home",
+				link: "/"
+			},
+			{
+				name: "about",
+				link: "/about"
+			},
+			{
+				name: "projects",
+				link: "/projects"
+			},
+			{
+				name: "contact",
+				link: "/contact"
+			}
+		]
 	},
 	plugins: [
 		"gatsby-plugin-sass",

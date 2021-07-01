@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "gatsby";
+import { Link, graphql, useStaticQuery } from "gatsby";
 import styled from "styled-components";
 
 const NavLink = styled(Link)`
@@ -39,12 +39,25 @@ const NavLink = styled(Link)`
 `;
 
 export default function NavLinks() {
-	return (
-		<>
-			<NavLink to="/">Home</NavLink>
-			<NavLink to="/about">About</NavLink>
-			<NavLink to="/projects">Projects</NavLink>
-			<NavLink to="/contact">Contact</NavLink>
-		</>
-	);
+	const getLinks = useStaticQuery(graphql`
+		query siteQuery {
+			site {
+				siteMetadata {
+					menuLinks {
+						name
+						link
+					}
+				}
+			}
+		}
+	`);
+
+	const links = getLinks.site.siteMetadata.menuLinks;
+	const linkList = links.map((link) => (
+		<NavLink key={link.name} to={link.link}>
+			{link.name}
+		</NavLink>
+	));
+
+	return <div>{linkList}</div>;
 }
