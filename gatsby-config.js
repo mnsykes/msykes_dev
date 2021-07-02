@@ -1,14 +1,40 @@
 module.exports = {
 	siteMetadata: {
-		title: "msykes_dev"
+		title: "Matthew Sykes",
+		menuLinks: [
+			{
+				name: "home",
+				link: "/"
+			},
+			{
+				name: "about",
+				link: "/about"
+			},
+			{
+				name: "projects",
+				link: "/projects"
+			},
+			{
+				name: "contact",
+				link: "/contact"
+			}
+		]
 	},
 	plugins: [
 		"gatsby-plugin-sass",
 		"gatsby-plugin-image",
 		"gatsby-plugin-react-helmet",
-		"gatsby-plugin-sharp",
-		"gatsby-transformer-sharp",
+		{
+			resolve: `gatsby-source-filesystem`,
+			options: {
+				name: `images`,
+				path: `${__dirname}/src/images/`
+			}
+		},
 		"gatsby-plugin-fontawesome-css",
+		"gatsby-plugin-styled-components",
+		"gatsby-transformer-sharp",
+		"gatsby-plugin-sharp",
 		{
 			resolve: `gatsby-source-filesystem`,
 			options: {
@@ -28,6 +54,14 @@ module.exports = {
 			options: {
 				name: `thumbs`,
 				path: `${__dirname}/src/projects/thumbs`
+			}
+		},
+		{
+			resolve: `gatsby-plugin-manifest`,
+			options: {
+				short_name: `starter`,
+				short_url: `/`,
+				icon: `src/images/favicon.png`
 			}
 		},
 		`gatsby-transformer-remark`

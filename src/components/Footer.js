@@ -1,25 +1,45 @@
 import React from "react";
 import { StaticImage } from "gatsby-plugin-image";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import { footerArea } from "./compstyles/footer.module.scss";
+import SocialLinks from "./SocialLinks";
+import styled from "styled-components";
+
+const FooterArea = styled.footer`
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	display: flex;
+	height: 10vh;
+	justify-content: space-between;
+	text-transform: uppercase;
+	border-top: 3px solid;
+	border-image-slice: 1;
+	border-image-source: linear-gradient(45deg, #f3ec78, #af4261);
+	margin: 3rem auto 0 auto;
+	padding: 2vw;
+	align-self: center;
+
+	@media (max-width: 992px) {
+		height: 8vh;
+	}
+`;
+
+const FooterTitle = styled.h3`
+	color: #f8d96a;
+	text-transform: uppercase;
+`;
 
 export default function Footer() {
 	return (
-		<footer className={footerArea}>
+		<FooterArea>
 			<div>
-				<h3>Matthew Sykes &copy;2021</h3>
+				<FooterTitle>Matthew Sykes &copy;2021</FooterTitle>
 				<br />
-				<a href="https://github.com/mnsykes">
-					<FontAwesomeIcon icon={faGithub} />
-				</a>
-				<a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_self_edit_top_card%3BCHuEGhCYS2CyndWSuCi2bQ%3D%3D">
-					<FontAwesomeIcon icon={faLinkedin} />
-				</a>
+				<SocialLinks />
 			</div>
 			<br />
 			<div>
-				<h3>Made with: </h3>
+				<FooterTitle>Made with: </FooterTitle>
 				<br />
 				<a href="https://www.gatsbyjs.com/">
 					<StaticImage
@@ -31,6 +51,6 @@ export default function Footer() {
 					/>
 				</a>
 			</div>
-		</footer>
+		</FooterArea>
 	);
 }
