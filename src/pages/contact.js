@@ -4,12 +4,13 @@ import TitleCard from "../components/TitleCard";
 import styled from "styled-components";
 
 const FormWrapper = styled.div`
-	padding: 0.75rem 1.5rem;
+	/* padding: 0.75rem 1.5rem; */
+	padding: 0;
 `;
 
 const ContactForm = styled.form`
 	margin: 0 auto;
-	padding: 2rem 0;
+	/* padding: 2rem 0; */
 `;
 
 const InputWrapper = styled.div`

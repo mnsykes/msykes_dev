@@ -9,7 +9,7 @@ const PageTitle = styled.h1`
 	text-transform: uppercase;
 	font-weight: bold;
 	font-size: 2.5rem;
-	padding: 1rem;
+	padding: 1rem 0;
 	color: white;
 	background: linear-gradient(45deg, #f3ec78, #af4261);
 	background-clip: text;

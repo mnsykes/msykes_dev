@@ -61,7 +61,7 @@ module.exports = {
 			options: {
 				short_name: `starter`,
 				short_url: `/`,
-				icon: `src/images/matt2.jpg`
+				icon: `src/images/favicon.png`
 			}
 		},
 		`gatsby-transformer-remark`

@@ -4,14 +4,29 @@ import SocialLinks from "./SocialLinks";
 import styled from "styled-components";
 
 const FooterArea = styled.footer`
-	padding-bottom: 3rem;
-	text-align: center;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	display: flex;
+	height: 10vh;
+	justify-content: space-between;
+	text-transform: uppercase;
+	border-top: 3px solid;
+	border-image-slice: 1;
+	border-image-source: linear-gradient(45deg, #f3ec78, #af4261);
+	margin: 3rem auto 0 auto;
+	padding: 2vw;
+	align-self: center;
+
+	@media (max-width: 992px) {
+		height: 8vh;
+	}
 `;
 
 const FooterTitle = styled.h3`
-	color: #fff;
+	color: #f8d96a;
 	text-transform: uppercase;
-	color: lemonchiffon;
 `;
 
 export default function Footer() {
@@ -19,11 +34,13 @@ export default function Footer() {
 		<FooterArea>
 			<div>
 				<FooterTitle>Matthew Sykes &copy;2021</FooterTitle>
+				<br />
 				<SocialLinks />
 			</div>
 			<br />
 			<div>
 				<FooterTitle>Made with: </FooterTitle>
+				<br />
 				<a href="https://www.gatsbyjs.com/">
 					<StaticImage
 						src="../images/icon.png"

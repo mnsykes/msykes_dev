@@ -4,7 +4,6 @@ import styled from "styled-components";
 import NavLinks from "./NavLinks";
 
 const Logo = styled.h1`
-	color: blue;
 	padding-top: 1.5rem;
 	background: linear-gradient(45deg, #f3ec78, #af4261);
 	background-clip: text;
@@ -13,7 +12,7 @@ const Logo = styled.h1`
 	-moz-text-fill-color: transparent;
 	-webkit-text-fill-color: transparent;
 
-	:hover {
+	&:hover {
 		background: linear-gradient(to left, #f3ec78, #af4261);
 		background-clip: text;
 		-webkit-background-clip: text;
@@ -26,11 +25,9 @@ const Logo = styled.h1`
 const Navigation = styled.nav`
 	display: flex;
 	height: 10vh;
-	/* background-color: #fff; */
 	position: relative;
 	justify-content: space-between;
 	text-transform: uppercase;
-	/* border-bottom: 2px solid #33333320; */
 	border-bottom: 3px solid;
 	border-image-slice: 1;
 	border-image-source: linear-gradient(45deg, #f3ec78, #af4261);
@@ -39,13 +36,8 @@ const Navigation = styled.nav`
 	z-index: 2;
 	align-self: center;
 
-	@media (max-width: 768px) {
-		position: sticky;
+	@media (max-width: 992px) {
 		height: 8vh;
-		top: 0;
-		left: 0;
-		right: 0;
-		left: 0;
 	}
 `;
 
@@ -53,9 +45,8 @@ const Toggle = styled.div`
 	display: none;
 	height: 100%;
 	cursor: pointer;
-	padding: 0 10vw;
 
-	@media (max-width: 768px) {
+	@media (max-width: 992px) {
 		display: flex;
 	}
 `;
@@ -66,13 +57,13 @@ const Navbox = styled.div`
 	justify-content: flex-end;
 	align-items: center;
 
-	@media (max-width: 768px) {
+	@media (max-width: 992px) {
 		flex-direction: column;
-		width: 100%;
+		width: 70%;
 		justify-content: flex-start;
 		position: fixed;
 		padding-top: 5vh;
-		background-color: #fff;
+		background: linear-gradient(180deg, #f3ec78, #af4261);
 		transition: all 0.3s ease-in;
 		top: 8vh;
 		left: ${(props) => (props.open ? "-100%" : "0")};
@@ -88,8 +79,8 @@ const Hamburger = styled.div`
 	position: relative;
 	transform: ${(props) => (props.open ? "rotate(-45deg)" : "inherit")};
 
-	::before,
-	::after {
+	&::before,
+	&::after {
 		width: 30px;
 		height: 3px;
 		background-color: #111;
@@ -98,12 +89,12 @@ const Hamburger = styled.div`
 		transition: all 0.3s linear;
 	}
 
-	::before {
+	&::before {
 		transform: ${(props) => (props.open ? "rotate(-90deg) translate(-10px, 0px)" : "rotate(0deg)")};
 		top: -10px;
 	}
 
-	::after {
+	&::after {
 		opacity: ${(props) => (props.open ? "0" : "1")};
 		transform: ${(props) => (props.open ? "rotate(90deg) " : "rotate(0deg)")};
 		top: 10px;

@@ -5,6 +5,7 @@ import styled from "styled-components";
 const NavLink = styled(Link)`
 	text-decoration: none;
 	color: white;
+	font-weight: bold;
 	display: inline-block;
 	white-space: nowrap;
 	margin: 0 1vw;
@@ -32,9 +33,32 @@ const NavLink = styled(Link)`
 	}
 
 	@media (max-width: 768px) {
+		display: block;
+		color: white;
+		font-weight: bold;
 		padding: 20px 0;
 		font-size: 1.5rem;
 		z-index: 6;
+
+		:after {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			width: 0%;
+			content: ".";
+			color: transparent;
+			background: #6e5494;
+			height: 1px;
+			transition: all 0.4s ease-in;
+		}
+
+		:hover {
+			color: #6e5494;
+			::after {
+				width: 100%;
+			}
+		}
 	}
 `;
 

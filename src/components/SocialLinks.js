@@ -4,7 +4,7 @@ import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import styled from "styled-components";
 
 const SocialLink = styled.a`
-	color: lightseagreen;
+	color: #6e5494;
 	font-size: 2rem;
 	padding: 0 1rem;
 
@@ -13,7 +13,7 @@ const SocialLink = styled.a`
 	}
 
 	:hover {
-		color: lemonchiffon;
+		color: #4078c0;
 	}
 
 	:visited {
