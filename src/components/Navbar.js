@@ -5,21 +5,35 @@ import NavLinks from "./NavLinks";
 
 const Logo = styled.h1`
 	color: blue;
-	border-bottom: 5px solid red;
+	padding-top: 1.5rem;
+	background: linear-gradient(45deg, #f3ec78, #af4261);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-moz-background-clip: text;
+	-moz-text-fill-color: transparent;
+	-webkit-text-fill-color: transparent;
 
 	:hover {
-		border-bottom: 5px solid yellow;
+		background: linear-gradient(to left, #f3ec78, #af4261);
+		background-clip: text;
+		-webkit-background-clip: text;
+		-moz-background-clip: text;
+		-moz-text-fill-color: transparent;
+		-webkit-text-fill-color: transparent;
 	}
 `;
 
 const Navigation = styled.nav`
 	display: flex;
 	height: 10vh;
-	background-color: #fff;
+	/* background-color: #fff; */
 	position: relative;
 	justify-content: space-between;
 	text-transform: uppercase;
-	border-bottom: 2px solid #33333320;
+	/* border-bottom: 2px solid #33333320; */
+	border-bottom: 3px solid;
+	border-image-slice: 1;
+	border-image-source: linear-gradient(45deg, #f3ec78, #af4261);
 	margin: 0 auto 3rem auto;
 	padding: 0 5vw;
 	z-index: 2;
@@ -102,7 +116,7 @@ export default function Navbar() {
 		<Navigation>
 			<div>
 				<Link to="/">
-					<Logo>MS</Logo>
+					<Logo>M_Sykes.Dev</Logo>
 				</Link>
 			</div>
 			<Toggle navbarOpen={navbarOpen} onClick={() => setNavbarOpen(!navbarOpen)}>

@@ -2,15 +2,21 @@ import React from "react";
 import styled from "styled-components";
 
 const Card = styled.div`
-	border-bottom: 4px solid yellow;
-	background: blue;
+	width: 100%;
 `;
 const PageTitle = styled.h1`
 	text-align: left;
 	text-transform: uppercase;
 	font-weight: bold;
+	font-size: 2.5rem;
 	padding: 1rem;
 	color: white;
+	background: linear-gradient(45deg, #f3ec78, #af4261);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-moz-background-clip: text;
+	-moz-text-fill-color: transparent;
+	-webkit-text-fill-color: transparent;
 `;
 
 // Make markdown files for each page

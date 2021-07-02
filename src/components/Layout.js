@@ -1,8 +1,8 @@
 import React from "react";
-import { createGlobalStyle } from "styled-components";
+import styled, { createGlobalStyle } from "styled-components";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
-import Window from "./Window";
+import BodyContent from "./BodyContent";
 
 const GlobalStyle = createGlobalStyle`
 	* {
@@ -13,9 +13,8 @@ const GlobalStyle = createGlobalStyle`
 
   body,
   html {
-    height: 100vh;
-    color: #333;
-    background: rgb(199, 199, 199);
+    color: #fff;
+    background: #223344;
     font-family: "Roboto", sans-serif;
   }
 
@@ -32,16 +31,23 @@ const GlobalStyle = createGlobalStyle`
 	}
 `;
 
+const LayoutContainer = styled.div`
+	max-width: 80vw;
+	margin: 0 auto;
+
+	@media (max-width: 768px) {
+		max-width: 95vw;
+	}
+`;
+
 export default function Layout({ children }) {
 	return (
-		<div>
+		<LayoutContainer>
 			<GlobalStyle />
-			<Window>
-				<Navbar />
-				{children}
-			</Window>
+			<Navbar />
+			<BodyContent>{children}</BodyContent>
 
 			<Footer />
-		</div>
+		</LayoutContainer>
 	);
 }

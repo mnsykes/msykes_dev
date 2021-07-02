@@ -3,18 +3,15 @@ import { StaticImage } from "gatsby-plugin-image";
 import SocialLinks from "./SocialLinks";
 import styled from "styled-components";
 
-const FooterArea = styled.div`
+const FooterArea = styled.footer`
 	padding-bottom: 3rem;
 	text-align: center;
-	position: relative;
-	bottom: 0;
-	background: goldenrod;
 `;
 
 const FooterTitle = styled.h3`
 	color: #fff;
 	text-transform: uppercase;
-	color: yellow;
+	color: lemonchiffon;
 `;
 
 export default function Footer() {

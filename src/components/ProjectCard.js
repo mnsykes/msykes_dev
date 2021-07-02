@@ -9,10 +9,13 @@ import TitleCard from "./TitleCard";
 const Card = styled.div`
 	margin: 0 auto 4rem auto;
 	background: white;
+	border: 3px solid;
+	border-image-slice: 1;
+	border-image-source: linear-gradient(45deg, #f3ec78, #af4261);
 `;
 
 const ImgArea = styled.div`
-	border: 3px solid green;
+	background: linear-gradient(45deg, #f3ec78, #af4261);
 `;
 
 const CardImage = styled(GatsbyImage)`
@@ -26,6 +29,7 @@ const Description = styled.div`
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
+	background: linear-gradient(45deg, #f3ec78, #af4261);
 
 	h3 {
 		font-weight: bold;
@@ -40,6 +44,7 @@ const Description = styled.div`
 
 const DescriptionArea = styled.div`
 	padding: 1rem 0.5rem 1.5rem 0.5rem;
+	background: #223344;
 `;
 
 const GitLink = styled(FontAwesomeIcon)`

@@ -30,12 +30,15 @@ const Label = styled.label`
 	text-transform: uppercase;
 	font-size: 1.25rem;
 	padding-bottom: 0.5rem;
-	color: blue;
+	color: white;
 `;
 
 const Input = styled.input`
 	font-size: 1rem;
 	padding: 0.5rem;
+	border: 3px solid;
+	border-image-slice: 1;
+	border-image-source: linear-gradient(45deg, #f3ec78, #af4261);
 `;
 
 const Message = styled.textarea`
@@ -44,12 +47,15 @@ const Message = styled.textarea`
 	max-width: 100%;
 	min-width: 100%;
 	margin-bottom: 1.5rem;
+	border: 3px solid;
+	border-image-slice: 1;
+	border-image-source: linear-gradient(45deg, #f3ec78, #af4261);
 `;
 
 const SubmitBtn = styled.button`
 	padding: 10px 5px;
 	width: 100%;
-	background: blue;
+	background: linear-gradient(45deg, #f3ec78, #af4261);
 	color: white;
 	font-weight: bold;
 	outline: none;
@@ -59,8 +65,7 @@ const SubmitBtn = styled.button`
 	text-transform: uppercase;
 
 	:hover {
-		background: yellow;
-		border-bottom: 5px solid blue;
+		background: linear-gradient(to left, #f3ec78, #af4261);
 	}
 `;
 export default function contact() {
