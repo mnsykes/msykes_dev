@@ -16,7 +16,7 @@ const GlobalStyle = createGlobalStyle`
   body,
   html {
 		height: 100vh;
-		width: 100vw;
+		max-width: 100vw;
     color: #fff;
     background: #264c70;
     font-family: "Roboto", sans-serif;

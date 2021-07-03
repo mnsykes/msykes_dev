@@ -59,11 +59,11 @@ const Navbox = styled.div`
 
 	@media (max-width: 992px) {
 		flex-direction: column;
-		width: 70%;
+		width: 100%;
 		justify-content: flex-start;
 		position: fixed;
 		padding-top: 5vh;
-		background: linear-gradient(180deg, #f3ec78, #af4261);
+		background: linear-gradient(180deg, #264c70, #af4261);
 		transition: all 0.3s ease-in;
 		top: 8vh;
 		left: ${(props) => (props.open ? "-100%" : "0")};
@@ -71,7 +71,7 @@ const Navbox = styled.div`
 `;
 
 const Hamburger = styled.div`
-	background-color: #111;
+	background-color: #af4261;
 	width: 30px;
 	height: 3px;
 	transition: all 0.3s linear;
@@ -83,7 +83,7 @@ const Hamburger = styled.div`
 	&::after {
 		width: 30px;
 		height: 3px;
-		background-color: #111;
+		background-color: #af4261;
 		content: "";
 		position: absolute;
 		transition: all 0.3s linear;
